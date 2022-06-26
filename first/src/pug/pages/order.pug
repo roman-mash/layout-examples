@@ -1,0 +1,21 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'Оформление заказа — Anti-Antiplagiat';
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		+breadcrumbs('Оформление заказа')
+		include ./../sections/pages/order/index.pug
+		include ./../sections/slider/buy-with.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

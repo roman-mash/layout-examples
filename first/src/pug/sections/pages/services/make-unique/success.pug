@@ -1,0 +1,58 @@
+section.section-order-done.section-pb
+  .container 
+    .section-top.m-b-20.m-md-b-30
+      h1.section-title3 Ваш заказ №135777 успешно обработан!
+    .f-row
+      .f-col-12.f-col-xl-8
+        .order-details
+          .order-details__item
+            .order-details__item-key Название документа
+            .order-details__item-value Диплом.docx
+          .order-details__item
+            .order-details__item-key Уникальность
+            .order-details__item-value 50
+          .order-details__item
+            .order-details__item-key Количество страниц
+            .order-details__item-value 11
+            a(href="/").order-details__item-extra Почему столько  страниц?
+          .order-details__item
+            .order-details__item-key Электронная почта
+            .order-details__item-value example@example.ru
+          .order-details__item
+            .order-details__item-key Сумма к оплате
+            .order-details__item-value 799 ₽
+            a(href="/").order-details__item-extra Получить скидку
+        .extra-services-block
+          a(role='button', data-toggle='collapse', href='#extraServices').extra-services-trigger.collapsed Дополнительные услуги
+          #extraServices.collapse
+            .collapse-container
+              .service-check
+                input#service1(type="checkbox", name="")
+                label(for="service1").service-check-lbl
+                  .service-check-lbl__title Сопровождение до защиты
+                  .service-check-lbl__price 99 ₽
+              .service-check
+                input#service2(type="checkbox", name="")
+                label(for="service2").service-check-lbl
+                  .service-check-lbl__title Преподавательский отчет
+                  .service-check-lbl__price 99 ₽
+              .service-check
+                input#service3(type="checkbox", name="")
+                label(for="service3").service-check-lbl
+                  .service-check-lbl__title Улучшенная маскировка
+                  .service-check-lbl__price 99 ₽
+              .service-check
+                input#service4(type="checkbox", name="")
+                label(for="service4").service-check-lbl
+                  .service-check-lbl__title Полный аудит документа
+                  .service-check-lbl__price 99 ₽
+              .service-check
+                input#service5(type="checkbox", name="")
+                label(for="service5").service-check-lbl
+                  .service-check-lbl__title Очистка документа от скрытого текста и технического кодирования
+                  .service-check-lbl__price 99 ₽
+        a(href="/").btn.btn-default.m-t-30.m-md-t-45 Оплатить
+        .order-warning.m-t-30.m-md-t-45
+          .order-warning__title Внимание!
+          .order-warning__subtitle Проверяйте папку “Спам”, письма могут отправляться туда по ошибке.
+          a(href="/").btn.btn-default-alt Как исправить? 

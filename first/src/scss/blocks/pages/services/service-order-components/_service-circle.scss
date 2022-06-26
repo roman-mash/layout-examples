@@ -1,0 +1,91 @@
+.service-circle {
+  &-lbl {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin: 0;
+    padding-left: 33px;
+    &__item {
+      display: flex;
+      align-items: center;
+      &-title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: $clr-text;
+      }
+      &-icon {
+        margin-left: 10px;
+        flex-shrink: 0;
+        img {
+          max-height: 24px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  input[type='checkbox'],
+  input[type='radio'] {
+    + label {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $clr-secondary;
+        border-radius: 50%;
+        background: transparent;
+        text-align: center;
+        transition: all 0.2s linear;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        transition: all 0.2s linear;
+
+        background-color: $clr-secondary;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 4px;
+        top: 7px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: 0;
+        border: none;
+        transition: all 0.2s linear;
+      }
+    }
+
+    &:checked {
+      + label {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.services-container {
+  margin-bottom: -15px;
+
+  .service-circle {
+    margin-bottom: 15px;
+  }
+}
+
+.service-circle-divider {
+  margin: 0 5px 0 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: $clr-text;
+}

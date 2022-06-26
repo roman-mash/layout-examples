@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--  Favicon -->
+	<link rel="icon" type="image/ico" href="./images/favicon.ico" />
+	<title>Главная страница</title>
+	<!--  Styles -->
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-custom.min.css" />
+	<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="vendor/slick/slick.css" />
+	<link rel="stylesheet" href="vendor/slick/slick-theme.css" />
+	<link rel="stylesheet" href="vendor/select2/css/select2.min.css" />
+	<link rel="stylesheet" href="css/helper-classes.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Page header-->
+		<header class="header">
+			<div class="header-content">
+				<div class="header-top">
+					<div class="container">
+						<div class="header-top-block"><a class="page-logo flex-img" href="/"></a>
+							<div class="header-contacts d-none d-xl-block">
+								<div class="header-contacts-block"><a class="phone-number" href="tel:8 (495) 000-00-00">
+										<div class="phone-number__icon"></div>
+										<div class="phone-number-block">
+											<div class="phone-number__number">8 (495) 000-00-00</div>
+											<div class="phone-number__text">Бесплатный звонок по Москве</div>
+										</div>
+									</a><a class="phone-number" href="tel:8 (800) 000-00-00">
+										<div class="phone-number__icon"></div>
+										<div class="phone-number-block">
+											<div class="phone-number__number">8 (800) 000-00-00</div>
+											<div class="phone-number__text">Бесплатный звонок по России</div>
+										</div>
+									</a></div>
+							</div>
+							<div class="header-panel">
+								<div class="panel-block"><a class="panel-item favorites" href="/favorite.html" style="background-image:url(./images/icons/panel/heart.svg)"></a><a class="panel-item compare" href="/compare.html" style="background-image:url(./images/icons/panel/bar-chart.svg)">
+										<div class="panel-item__amount">3</div>
+									</a><a class="panel-item login" href="/login.html" style="background-image:url(./images/icons/panel/user.svg)"></a><a class="panel-item cart" href="/cart.html" style="background-image:url(./images/icons/panel/cart.svg)">
+										<div class="panel-item__amount">1</div>
+									</a></div><a class="market-link" href="#">
+									<div class="market-link__item market-link__blue">B2B</div>
+									<div class="market-link__item market-link__white">MARKET</div>
+								</a>
+								<button class="btn-open-menu d-xl-none">
+									<div class="btn-line btn-line_1"> </div>
+									<div class="btn-line btn-line_2"> </div>
+									<div class="btn-line btn-line_3"> </div>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-center">
+					<div class="container">
+						<div class="header-center-block">
+							<div class="header-menu">
+								<ul class="nav navbar-nav">
+									<li><a href="/production.html">Производство электрощитов</a></li>
+									<li><a href="/projection.html">Проектирование</a></li>
+									<li><a href="/portfolio.html">Портфолио</a></li>
+									<li><a href="/about.html">О компании</a></li>
+									<li><a href="/contacts.html">Контакты</a></li>
+									<li><a href="/career.html">Карьера</a></li>
+									<li><a href="/cooperation.html">Сотрудничество</a></li>
+								</ul>
+							</div>
+							<div class="header-contacts d-xl-none m-t-40">
+								<div class="header-contacts-block"><a class="phone-number" href="tel:8 (495) 000-00-00">
+										<div class="phone-number__icon"></div>
+										<div class="phone-number-block">
+											<div class="phone-number__number">8 (495) 000-00-00</div>
+											<div class="phone-number__text">Бесплатный звонок по Москве</div>
+										</div>
+									</a><a class="phone-number" href="tel:8 (800) 000-00-00">
+										<div class="phone-number__icon"></div>
+										<div class="phone-number-block">
+											<div class="phone-number__number">8 (800) 000-00-00</div>
+											<div class="phone-number__text">Бесплатный звонок по России</div>
+										</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<div class="container">
+						<div class="header-bottom-block">
+							<button class="btn btn-catalog btn-secondary">Каталог</button>
+							<form class="search-input">
+								<div class="input-group">
+									<input class="input-default" type="text" name="keyword" placeholder="Поиск по каталогу" />
+									<button class="btn-search-sm" type="submit"> </button>
+								</div>
+								<button class="btn-search btn-secondary btn" type="submit">Найти</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="catalog">
+					<div class="catalog__lvl1">
+						<ul class="catalog__lvl1-list">
+							<li><a class="hover has-inner-lvl" href="/catalog2.html">
+									<div class="icon flex-img"> <img src="./images/icons/main-catalog/cabel.png" alt="" /></div>
+									<div class="text">Кабель и провод</div>
+								</a>
+								<div class="catalog__lvl2 showed"><a class="catalog-back" href="#">Назад</a>
+									<ul class="catalog__lvl2-list">
+										<li><a class="has-inner-lvl" href="#">Лампы</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Лампы светодиодные</a></li>
+													<li><a href="#">Лампы газоразрядные</a></li>
+													<li><a href="#">Лампы галогенные</a></li>
+													<li><a href="#">Лампы люминесцентные</a></li>
+													<li><a href="#">Лампы накаливания</a></li>
+													<li><a href="#">Лампы специального назначения</a></li>
+													<li><a href="#">Лампы для растений и аквариумов </a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="has-inner-lvl" href="#">Светильники</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Светильники настенно-потолочные</a></li>
+													<li><a href="#">Светильники даунлайты</a></li>
+													<li><a href="#">Светильники армстронг</a></li>
+													<li><a href="#">Настенные светильники</a></li>
+													<li><a href="#">Потолочные светильники</a></li>
+													<li><a href="#">Светильники подвесные, люстры</a></li>
+													<li><a href="#">Прожекторы</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="has-inner-lvl" href="#">Аксессуары и комплектующие для освещения</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Блоки аварийного питания</a></li>
+													<li><a href="#">Блоки защиты ламп</a></li>
+													<li><a href="#">Импульстные зажигающие устройсвта</a></li>
+													<li><a href="#">Крепеж и держатели для светильников</a></li>
+													<li><a href="#">Опоры наружного освещения</a></li>
+													<li><a href="#">Патроны для лампочек</a></li>
+													<li><a href="#">Плафоны для светильников</a></li>
+													<li><a href="#">Блоки аварийного питания</a></li>
+													<li><a href="#">Блоки защиты ламп</a></li>
+													<li><a href="#">Импульстные зажигающие устройсвта</a></li>
+													<li><a href="#">Крепеж и держатели для светильников</a></li>
+													<li><a href="#">Опоры наружного освещения</a></li>
+													<li><a href="#">Патроны для лампочек</a></li>
+													<li><a href="#">Плафоны для светильников</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="has-inner-lvl" href="#">Фонари и переносные светильники</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Лампы светодиодные</a></li>
+													<li><a href="#">Лампы газоразрядные</a></li>
+													<li><a href="#">Лампы галогенные</a></li>
+													<li><a href="#">Лампы люминесцентные</a></li>
+													<li><a href="#">Лампы накаливания</a></li>
+													<li><a href="#">Лампы специального назначения</a></li>
+													<li><a href="#">Лампы для растений и аквариумов </a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="has-inner-lvl" href="/catalog2.html">
+									<div class="icon flex-img"> <img src="./images/icons/main-catalog/light-tech.png" alt="" /></div>
+									<div class="text">Светотехника</div>
+								</a>
+								<div class="catalog__lvl2"><a class="catalog-back" href="#">Назад</a>
+									<ul class="catalog__lvl2-list">
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="has-inner-lvl" href="/catalog2.html">
+									<div class="icon flex-img"> <img src="./images/icons/main-catalog/fan.png" alt="" /></div>
+									<div class="text">Вентиляция</div>
+								</a>
+								<div class="catalog__lvl2"><a class="catalog-back" href="#">Назад</a>
+									<ul class="catalog__lvl2-list">
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="has-inner-lvl" href="/catalog2.html">
+									<div class="icon flex-img"> <img src="./images/icons/main-catalog/electricity.png" alt="" /></div>
+									<div class="text">Электротовары</div>
+								</a>
+								<div class="catalog__lvl2"><a class="catalog-back" href="#">Назад</a>
+									<ul class="catalog__lvl2-list">
+										<li><a class="has-inner-lvl" href="#">Лампы</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Лампы светодиодные</a></li>
+													<li><a href="#">Лампы газоразрядные</a></li>
+													<li><a href="#">Лампы галогенные</a></li>
+													<li><a href="#">Лампы люминесцентные</a></li>
+													<li><a href="#">Лампы накаливания</a></li>
+													<li><a href="#">Лампы специального назначения</a></li>
+													<li><a href="#">Лампы для растений и аквариумов </a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="has-inner-lvl" href="#">Светильники</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Светильники настенно-потолочные</a></li>
+													<li><a href="#">Светильники даунлайты</a></li>
+													<li><a href="#">Светильники армстронг</a></li>
+													<li><a href="#">Настенные светильники</a></li>
+													<li><a href="#">Потолочные светильники</a></li>
+													<li><a href="#">Светильники подвесные, люстры</a></li>
+													<li><a href="#">Прожекторы</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="has-inner-lvl" href="#">Аксессуары и комплектующие для освещения</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Блоки аварийного питания</a></li>
+													<li><a href="#">Блоки защиты ламп</a></li>
+													<li><a href="#">Импульстные зажигающие устройсвта</a></li>
+													<li><a href="#">Крепеж и держатели для светильников</a></li>
+													<li><a href="#">Опоры наружного освещения</a></li>
+													<li><a href="#">Патроны для лампочек</a></li>
+													<li><a href="#">Плафоны для светильников</a></li>
+													<li><a href="#">Блоки аварийного питания</a></li>
+													<li><a href="#">Блоки защиты ламп</a></li>
+													<li><a href="#">Импульстные зажигающие устройсвта</a></li>
+													<li><a href="#">Крепеж и держатели для светильников</a></li>
+													<li><a href="#">Опоры наружного освещения</a></li>
+													<li><a href="#">Патроны для лампочек</a></li>
+													<li><a href="#">Плафоны для светильников</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a class="has-inner-lvl" href="#">Фонари и переносные светильники</a>
+											<div class="catalog__lvl3"><a class="catalog-back" href="#">Назад</a>
+												<ul class="catalog__lvl3-list">
+													<li><a href="#">Лампы светодиодные</a></li>
+													<li><a href="#">Лампы газоразрядные</a></li>
+													<li><a href="#">Лампы галогенные</a></li>
+													<li><a href="#">Лампы люминесцентные</a></li>
+													<li><a href="#">Лампы накаливания</a></li>
+													<li><a href="#">Лампы специального назначения</a></li>
+													<li><a href="#">Лампы для растений и аквариумов </a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="has-inner-lvl" href="/catalog2.html">
+									<div class="icon flex-img"> <img src="./images/icons/main-catalog/lightning-protection.png" alt="" /></div>
+									<div class="text">Молниезащита</div>
+								</a>
+								<div class="catalog__lvl2"><a class="catalog-back" href="#">Назад</a>
+									<ul class="catalog__lvl2-list">
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="has-inner-lvl" href="/catalog2.html">
+									<div class="icon flex-img"> <img src="./images/icons/main-catalog/factory.png" alt="" /></div>
+									<div class="text">Завод</div>
+								</a>
+								<div class="catalog__lvl2"><a class="catalog-back" href="#">Назад</a>
+									<ul class="catalog__lvl2-list">
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+										<li><a href="#">Провод ПНСВ для прогрева бетона</a></li>
+										<li><a href="#">Провод СИП 1, СИП 2, СИП 3, СИП 4, СИП 5</a></li>
+										<li><a href="#">Кабель с бумажной изоляцией</a></li>
+										<li><a href="#">Кабель силовой с изоляцией из СПЭ 10 кВ</a></li>
+										<li><a href="#">Кабельная продукция</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Page content-->
+		<main class="content">
+			<div class="breadcrumb-nav">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="/">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Кабель и провод</a></li>
+						<li><a href="#">Кабельная продукция</a></li>
+						<li class="active">КВОРЭН 1*6-5</li>
+					</ol>
+				</div>
+			</div>
+			<section class="section-catalog section-p_type2">
+				<div class="container">
+					<div class="catalog-content">
+						<div class="product-top m-b-20 m-md-b-15 m-lg-b-30">
+							<h1 class="product-title">Кабель КВОРЭН 1*6-5</h1>
+						</div>
+						<div class="f-row">
+							<div class="f-col-12 f-col-md-4">
+								<div class="product-slider">
+									<div class="product-bages">
+										<div class="product-bages__item product-bages__item--type-dark">новинка</div>
+										<div class="product-bages__item product-bages__item--type-light">Акция</div>
+									</div>
+									<div class="product-slider-preview">
+										<div class="product-slider-preview-wrap">
+											<div class="product-slide"><a class="product-img flex-img" href="./images/products/1.jpg" data-fancybox="product-imgs"> <img src="./images/products/1.jpg" alt="" /></a></div>
+											<div class="product-slide"><a class="product-img flex-img" href="./images/products/1.jpg" data-fancybox="product-imgs"> <img src="./images/products/1.jpg" alt="" /></a></div>
+											<div class="product-slide"><a class="product-img flex-img" href="./images/products/1.jpg" data-fancybox="product-imgs"> <img src="./images/products/1.jpg" alt="" /></a></div>
+											<div class="product-slide"><a class="product-img flex-img" href="./images/products/1.jpg" data-fancybox="product-imgs"> <img src="./images/products/1.jpg" alt="" /></a></div>
+										</div>
+										<div class="slider-controls">
+											<div class="btns-switch">
+												<button class="btn-no-styles btn-switch prev"></button>
+												<button class="btn-no-styles btn-switch next"></button>
+											</div>
+										</div>
+									</div>
+									<div class="product-slider-tabs">
+										<div class="product-slider-tabs-wrap">
+											<div class="product-tab">
+												<div class="product-img flex-img"> <img src="./images/products/1.jpg" alt="" /></div>
+											</div>
+											<div class="product-tab">
+												<div class="product-img flex-img"> <img src="./images/products/1.jpg" alt="" /></div>
+											</div>
+											<div class="product-tab">
+												<div class="product-img flex-img"> <img src="./images/products/1.jpg" alt="" /></div>
+											</div>
+											<div class="product-tab">
+												<div class="product-img flex-img"> <img src="./images/products/1.jpg" alt="" /></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="f-col-12 f-col-md-4">
+								<div class="product-description">
+									<div class="product-description__title">Характеристики</div>
+									<div class="product-description__list">
+										<div class="product-description__item">
+											<div class="product-description__item-key">Артикул</div>
+											<div class="product-description__item-value">А-3130579</div>
+										</div>
+										<div class="product-description__item">
+											<div class="product-description__item-key">Бренд</div>
+											<div class="product-description__item-value">Воронежкабель</div>
+										</div>
+										<div class="product-description__item">
+											<div class="product-description__item-key">Диаметр, мм</div>
+											<div class="product-description__item-value">14,5</div>
+										</div>
+										<div class="product-description__item">
+											<div class="product-description__item-key">Сечение, мм2</div>
+											<div class="product-description__item-value">6</div>
+										</div>
+									</div><a class="link-to-all-features" href="#tab2" role="tab" data-toggle="tab">Все характеристики</a>
+								</div>
+							</div>
+							<div class="f-col-12 f-col-md-4">
+								<div class="product-page-info">
+									<div class="product-page-price">
+										<div class="product-page-price__actual">149 ₽/м</div>
+										<div class="product-page-price__before-discount">159 ₽/м</div>
+									</div>
+									<div class="product-page-availability">
+										<div class="product-page-availability__title">В наличии:</div>
+										<div class="product-page-availability__count">1077 м</div>
+									</div>
+									<div class="product-page-counter">
+										<div class="product-page-counter__title">Кол-во, м:</div>
+										<div class="product-page-counter__panel">
+											<button class="btn-product-counter minus counterMinus" disabled="disabled"></button>
+											<input class="counterInput" type="text" value="8" />
+											<button class="btn-product-counter plus counterPlus"> </button>
+										</div>
+									</div>
+									<div class="product-page-control">
+										<div class="product-page-control__item">
+											<button class="btn-like js-like"></button>
+										</div>
+										<div class="product-page-control__item">
+											<button class="btn-compare js-compare"></button>
+										</div>
+										<div class="product-page-control__item"><a class="btn btn-default btn-add-to-cart">В корзину</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product-tabs">
+							<div class="product-btns-tabs">
+								<button class="dropdown-btn-tabs d-block d-md-none">Описание товара</button>
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="active" role="presentation"><a href="#tab1" role="tab" data-toggle="tab">Описание товара</a></li>
+									<li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">Характеристики</a></li>
+									<li role="presentation"><a href="#tab3" role="tab" data-toggle="tab">Документы</a></li>
+								</ul>
+							</div>
+							<div class="product-panes">
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="tab1" role="tabpanel">
+										<div class="tab-info">
+											<p>Кабели предназначены для аэродромных огней на номинальное напряжение 5000 В переменного тока частоты 50 Гц, применяемых в системах светосигнального оборудования аэродромов.</p>
+											<p>Кабели изготаваливаются для эксплуатации во всех макроклиматических районах на суше и море, кроме макроклиматического района с очень холодным климатом. Кабели применяются для прокладки под навесом, в помещениях или объемах, где колебания температуры и влажности воздуха несущественно отличаются от колебаний на открытом воздухе. Кабели устойчивы к изгибу при радиусе изгиба, равном 15 номинальным наружным диаметрам кабеля на угол ±90°, число циклов изгибов - не менее 100. Прочность при растяжении резиновой оболочки - не менее 5,39 МПа (55 кгс/кв.мм.); относительное удлинение при разрыве резиновой оболочки - не менее 250% и изоляции - не менее 300%. Кабели устойчивы к воздействию озона, плесневых грибов, влаги, минеральных масел, бензина, керосина и слабых растворов солей, кислот и щелочей. Кабели не распространяют горение при одиночной прокладке.</p>
+											<p>Минимальная наработка кабелей - 50000 часов. Минимальный срок службы КВОРЭН 1х6-5 - 15 лет.</p>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab2" role="tabpanel">
+										<div class="tab-info">
+											<div class="product-features">
+												<div class="product-features__title">Характеристики</div>
+												<div class="product-features__list">
+													<div class="product-feature">
+														<div class="product-feature__key">Вес, кг</div>
+														<div class="product-feature__value">350</div>
+													</div>
+													<div class="product-feature">
+														<div class="product-feature__key">Диаметр, мм</div>
+														<div class="product-feature__value">14,5</div>
+													</div>
+													<div class="product-feature">
+														<div class="product-feature__key">Сечение, мм2</div>
+														<div class="product-feature__value">6</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="tab3" role="tabpanel">
+										<div class="tab-info">
+											<div class="product-documents"><a class="product-documents__item" href="/" download="download">Сертификат</a><a class="product-documents__item" href="/" download="download">Инструкция</a><a class="product-documents__item" href="/" download="download">Презентация</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-slider section-p_type2">
+				<div class="container">
+					<div class="section-content">
+						<div class="section-title section-title--slider m-b-30 m-lg-b-40">Аналоги</div>
+						<div class="slider-default slider-btns-dflt">
+							<div class="slider-default-wrap margin-sliders">
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ВВГ-Пнг(А) 3*2.5" href="/product.html">Кабель ВВГ-Пнг(А) 3*2.5</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 313057911</div>
+														<div class="product-card__producer" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 313057911</div>
+													</div>
+													<div class="product-card__producer list-type" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> Под заказ</div>
+													<div class="product-card__price"><span class="point-description">Цена:</span> По запросу</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability">Под заказ</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-secondary btn-add-to-cart">В корзине</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель АПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель АПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 3130579119</div>
+														<div class="product-card__producer" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 3130579119</div>
+													</div>
+													<div class="product-card__producer list-type" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 5500 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 75 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель ПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 4562228002</div>
+														<div class="product-card__producer" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 4562228002</div>
+													</div>
+													<div class="product-card__producer list-type" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 1449 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 129 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ВВГ-Пнг(А) 3*2.5" href="/product.html">Кабель ВВГ-Пнг(А) 3*2.5</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 313057911</div>
+														<div class="product-card__producer" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 313057911</div>
+													</div>
+													<div class="product-card__producer list-type" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> Под заказ</div>
+													<div class="product-card__price"><span class="point-description">Цена:</span> По запросу</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability">Под заказ</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-secondary btn-add-to-cart">В корзине</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель АПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель АПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 3130579119</div>
+														<div class="product-card__producer" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 3130579119</div>
+													</div>
+													<div class="product-card__producer list-type" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 5500 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 75 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель ПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 4562228002</div>
+														<div class="product-card__producer" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 4562228002</div>
+													</div>
+													<div class="product-card__producer list-type" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 1449 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 129 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-controls">
+								<div class="btns-switch">
+									<button class="btn-no-styles btn-switch prev"></button>
+									<button class="btn-no-styles btn-switch next"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-slider section-p_type2">
+				<div class="container">
+					<div class="section-content">
+						<div class="section-title section-title--slider m-b-30 m-lg-b-40">Сопутствующие товары</div>
+						<div class="slider-default slider-btns-dflt">
+							<div class="slider-default-wrap margin-sliders">
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ВВГ-Пнг(А) 3*2.5" href="/product.html">Кабель ВВГ-Пнг(А) 3*2.5</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 313057911</div>
+														<div class="product-card__producer" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 313057911</div>
+													</div>
+													<div class="product-card__producer list-type" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> Под заказ</div>
+													<div class="product-card__price"><span class="point-description">Цена:</span> По запросу</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability">Под заказ</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-secondary btn-add-to-cart">В корзине</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель АПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель АПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 3130579119</div>
+														<div class="product-card__producer" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 3130579119</div>
+													</div>
+													<div class="product-card__producer list-type" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 5500 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 75 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель ПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 4562228002</div>
+														<div class="product-card__producer" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 4562228002</div>
+													</div>
+													<div class="product-card__producer list-type" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 1449 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 129 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ВВГ-Пнг(А) 3*2.5" href="/product.html">Кабель ВВГ-Пнг(А) 3*2.5</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 313057911</div>
+														<div class="product-card__producer" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 313057911</div>
+													</div>
+													<div class="product-card__producer list-type" title="Воронежкабель"><span class="point-description">Бренд:</span> Воронежкабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> Под заказ</div>
+													<div class="product-card__price"><span class="point-description">Цена:</span> По запросу</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability">Под заказ</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-secondary btn-add-to-cart">В корзине</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель АПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель АПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 3130579119</div>
+														<div class="product-card__producer" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 3130579119</div>
+													</div>
+													<div class="product-card__producer list-type" title="Конкорд"><span class="point-description">Бренд:</span> Конкорд</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 5500 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 75 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide-content">
+									<div class="product-card">
+										<div class="product-card-wrapper">
+											<div class="product-card-info"><a class="product-card__img flex-img" href="/product.html"><img src="./images/products/1.jpg" alt="" /></a>
+												<div class="product-card-details">
+													<div class="product-card__naming"><a class="product-card__title" title="Кабель ПвВнг(А)-LS, 15 кВ" href="/product.html">Кабель ПвВнг(А)-LS, 15 кВ</a>
+														<div class="product-card__article product-card__article--type-list">Арт: 4562228002</div>
+														<div class="product-card__producer" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+														<div class="product-card__article product-card__article--type-tile">Арт: 4562228002</div>
+													</div>
+													<div class="product-card__producer list-type" title="Людиновокабель"><span class="point-description">Бренд:</span> Людиновокабель</div>
+													<div class="product-card__availability"><span class="point-description">Наличие:</span> 1449 м</div>
+													<div class="product-card__price have-price"><span class="point-description">Цена:</span> 129 ₽/м</div>
+												</div>
+											</div>
+											<div class="product-card-manage">
+												<div class="product-card__control">
+													<div class="product-card__control-item">
+														<div class="product-availability available">В наличии</div>
+													</div>
+													<div class="product-card__control-item">
+														<div class="product-counter">
+															<div class="btn-minus-wrapper">
+																<button class="btn-counter btn-minus counterMinus" disabled="disabled"></button>
+															</div>
+															<input class="counterInput product-counter__input" type="text" value="1" />
+															<div class="btn-plus-wrapper">
+																<button class="btn-counter btn-plus counterPlus"></button>
+															</div>
+														</div>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-like js-like"></button>
+													</div>
+													<div class="product-card__control-item">
+														<button class="btn-compare js-compare"></button>
+													</div>
+													<div class="product-card__control-item"><a class="btn btn-default btn-add-to-cart">В корзину</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-controls">
+								<div class="btns-switch">
+									<button class="btn-no-styles btn-switch prev"></button>
+									<button class="btn-no-styles btn-switch next"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<!-- Page footer-->
+	<footer class="footer" id="bottom">
+		<div class="footer-block">
+			<div class="container">
+				<div class="footer-content">
+					<div class="f-row">
+						<div class="f-col-12 f-col-md-6 f-col-xl-4">
+							<ul class="footer-menu">
+								<li><a href="/">Производство электрощитов</a></li>
+								<li><a href="/">Проектирование</a></li>
+								<li><a href="/">Портфолио</a></li>
+								<li><a href="/">О компании</a></li>
+								<li><a href="/">Контакты</a></li>
+								<li><a href="/">Карьера</a></li>
+								<li><a href="/">Сотрудничество</a></li>
+							</ul>
+						</div>
+						<div class="f-col-12 f-col-md-6 f-col-xl-8">
+							<div class="f-row">
+								<div class="f-col-12 f-col-xl-6">
+									<div class="footer-contact">
+										<div class="footer-contact__icon address"></div>
+										<div class="footer-contact__text"><span class="font-w-bold">Офис:</span> 444 Kaya Rue, Hoegertown</div>
+									</div>
+								</div>
+								<div class="f-col-12 f-col-xl-6">
+									<div class="footer-contact">
+										<div class="footer-contact__icon address"></div>
+										<div class="footer-contact__text"><span class="font-w-bold">Склад:</span> 444 Kaya Rue, Hoegertown</div>
+									</div>
+								</div>
+							</div>
+							<div class="f-row">
+								<div class="f-col-12 f-col-xl-6"><a class="footer-contact" href="tel:8 (495) 000-00-00">
+										<div class="footer-contact__icon phone"></div>
+										<div class="footer-contact__text">8 (495) 000-00-00</div>
+									</a></div>
+								<div class="f-col-12 f-col-xl-6"><a class="footer-contact" href="tel:8 (800) 000-00-00">
+										<div class="footer-contact__icon phone"></div>
+										<div class="footer-contact__text">8 (800) 000-00-00</div>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal fade" id="callback" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button class="btn-close-modal" type="button" data-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-block">
+					<div class="modal__header">Заказать звонок</div>
+					<form class="modal-form" action="">
+						<div class="form-group">
+							<input class="input-default" type="text" placeholder="Имя" />
+						</div>
+						<div class="form-group">
+							<input class="phone-mask input-default" type="tel" placeholder="Номер телефона" />
+						</div>
+						<div class="form-group">
+							<input class="input-default" type="email" placeholder="Электронная почта" />
+						</div>
+						<div class="form-group">
+							<textarea class="textarea_type" placeholder="Ваше сообщение"></textarea>
+						</div>
+						<div class="modal-privacy">Нажимая «Заказать звонок»,<br> Вы принимаете условия <a href="#">политики конфиденциальности</a></div>
+						<button class="btn btn-default w-100 modal__btn">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  JavaScript-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="vendor/mask/jquery.mask.min.js"></script>
+	<script type="text/javascript" src="vendor/object-fit/ofi.min.js"></script>
+	<script type="text/javascript" src="vendor/smoothscrollbar/smooth-scrollbar.js"></script>
+	<script type="text/javascript" src="vendor/match-height/jquery.matchHeight.js"></script>
+	<script type="text/javascript" src="vendor/select2/js/select2.min.js"></script>
+	<script type="text/javascript" src="vendor/select2/js/i18n/ru.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

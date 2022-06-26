@@ -1,0 +1,13 @@
+mixin reviews-slide(author, date, text, mark)
+  .reviews-slide.ss-item
+    .reviews-slide__top
+      .reviews-slide__author #{author}
+      .reviews-slide__date #{date}
+    .reviews-slide__middle
+      .reviews-slide__text
+        p #{text}
+    .reviews-slide__bottom
+      .reviews-slide__mark
+        .reviews-slide__mark-title Оценка
+        .reviews-slide__mark-count #{mark}
+      a(href="/").reviews-slide__review-link Ссылка на отзыв

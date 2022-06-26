@@ -1,0 +1,49 @@
+.section-why {
+  background-image: url('./../images/bgs/bg-why.svg');
+  background-repeat: no-repeat;
+  background-size: 263px 263px;
+  background-position: top 20px right 150px;
+  @media (max-width: 1199.98px) {
+    background-position: top 20px right;
+  }
+  @media (max-width: 991.98px) {
+    background-position: top 20px right -130px;
+  }
+  @media (max-width: 767.98px) {
+  }
+}
+
+.why-item {
+  &__number {
+    font-family: $font-family-alt;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: $clr-text;
+    @media (max-width: 767.98px) {
+      font-size: 54px;
+    }
+  }
+  &__divider {
+    background-color: $clr-main;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    width: 68px;
+    height: 8px;
+    @media (max-width: 767.98px) {
+      margin-top: 13px;
+      margin-bottom: 11px;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: $clr-text;
+    @media (max-width: 767.98px) {
+      font-size: 14px;
+    }
+  }
+}

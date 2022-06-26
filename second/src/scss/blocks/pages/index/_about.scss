@@ -1,0 +1,42 @@
+.about {
+  position: relative;
+  padding: 0 0 80px;
+  z-index: 10;
+  @media (max-width: 991.98px) {
+    padding: 0 0 60px;
+  }
+  @media (max-width: 767.98px) {
+  }
+  &__text {
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $clr-text;
+    @media (max-width: 1199.98px) {
+      max-width: 700px;
+    }
+    @media (max-width: 991.98px) {
+      max-width: 550px;
+    }
+    @media (max-width: 767.98px) {
+    }
+  }
+  &__img {
+    position: absolute;
+    width: 275px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    @media (max-width: 991.98px) {
+      width: 200px;
+    }
+    @media (max-width: 767.98px) {
+      width: 100px;
+      height: 72px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'Главная страница';
+	- var bodyClass = "home"
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		include ./../sections/pages/index/main-slider.pug
+		include ./../sections/pages/index/features.pug
+		include ./../sections/pages/index/about.pug
+		include ./../sections/pages/index/product-types.pug
+		include ./../sections/pages/index/popular.pug
+		include ./../sections/pages/index/new.pug
+		include ./../sections/pages/index/advantages.pug
+		include ./../sections/pages/index/clients.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

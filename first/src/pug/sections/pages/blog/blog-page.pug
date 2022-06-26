@@ -1,0 +1,41 @@
+section.section-services-page.section-pb
+  .container 
+    .section-top.d-md-flex.justify-content-between.align-items-center.m-b-30.m-md-b-40
+      h1.section-title Блог
+      .sorting.m-t-15.m-md-t-0
+        label(for="sort-category").sorting__title Выбрать категорию
+        select.select-sorting#sort-category(name="sort-category")
+          option(value="") все
+          option(value="") аудит
+          option(value="") делопроизводство
+    .artices-list.f-row.m-n-b-30 
+      +article-card('article1.png', '25.01.2022', 'Искусство медиапланирования как эволюция мерчандайзинга')
+      +article-card('article2.png', '25.01.2022', 'Ролевой традиционный канал: структура рынка или рекламная парадигма')
+      +article-card('article3.png', '25.01.2022', 'Экспериментальный пресс-клиппинг — актуальная национальная политика')
+      +article-card('article1.png', '25.01.2022', 'Искусство медиапланирования как эволюция мерчандайзинга')
+      +article-card('article2.png', '25.01.2022', 'Ролевой традиционный канал: структура рынка или рекламная парадигма')
+      +article-card('article3.png', '25.01.2022', 'Экспериментальный пресс-клиппинг — актуальная национальная политика')
+      +article-card('article1.png', '25.01.2022', 'Искусство медиапланирования как эволюция мерчандайзинга')
+      +article-card('article2.png', '25.01.2022', 'Ролевой традиционный канал: структура рынка или рекламная парадигма')
+      +article-card('article3.png', '25.01.2022', 'Экспериментальный пресс-клиппинг — актуальная национальная политика')
+      +article-card('article1.png', '25.01.2022', 'Искусство медиапланирования как эволюция мерчандайзинга')
+      +article-card('article2.png', '25.01.2022', 'Ролевой традиционный канал: структура рынка или рекламная парадигма')
+      +article-card('article3.png', '25.01.2022', 'Экспериментальный пресс-клиппинг — актуальная национальная политика')
+    nav.pagination-nav.m-t-40(aria-label='Page navigation')
+      ul.pagination
+        li
+          a(href='#', aria-label='Previous')
+            span(aria-hidden='true') &laquo;
+        li.active
+          a(href='#') 1
+        li
+          a(href='#') 2
+        li
+          a(href='#') 3
+        li
+          a(href='#') ...
+        li
+          a(href='#') 8
+        li
+          a(href='#', aria-label='Next')
+            span(aria-hidden='true') &raquo;

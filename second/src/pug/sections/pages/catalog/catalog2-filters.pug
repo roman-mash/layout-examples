@@ -1,0 +1,166 @@
+.catalog-filters
+  .page-title.d-md-none.m-b-20.m-lg-b-40 Кабельная продукция
+  a(href="#filters", role="button", data-toggle="collapse").btn-open-filter.collapsed.d-md-none Фильтр
+  #filters.catalog-filters__list.collapse
+    .catalog-filter.hidden-sm-up
+      .filter-content
+        .sorting-select.p-t-10
+          .sorting-select__title Товаров на странице:
+          .sorting-select__select
+            select.select2-sorting(name="page-count")
+              option(value="10") 10
+              option(value="20") 20
+              option(value="30") 30
+              option(value="40") 40
+        .sorting-availability.p-t-10
+          input#availableMob(type="checkbox", name="available", checked)
+          label(for="availableMob") в наличии
+    .catalog-filter
+      a.btn-filter.collapsed(role='button', data-toggle='collapse', href='#productType') Тип изделия
+      #productType.collapse.filter-list
+        .filter-content 
+          .scrollbarAdded.filter-inner
+            .filter-item 
+              input#pt1(type="checkbox", name="pt1")
+              label(for="pt1") Кабели контрольные
+            .filter-item 
+              input#pt2(type="checkbox", name="pt2")
+              label(for="pt2") Кабели связи
+            .filter-item 
+              input#pt3(type="checkbox", name="pt3")
+              label(for="pt3") Кабели специального назначения
+            .filter-item 
+              input#pt4(type="checkbox", name="pt4")
+              label(for="pt4") Кабель-каналы настенные
+            .filter-item 
+              input#pt5(type="checkbox", name="pt5")
+              label(for="pt5") Кабельные вводы
+            .filter-item 
+              input#pt6(type="checkbox", name="pt6")
+              label(for="pt6") Кабели контрольные
+            .filter-item 
+              input#pt7(type="checkbox", name="pt7")
+              label(for="pt7") Кабели связи
+            .filter-item 
+              input#pt8(type="checkbox", name="pt8")
+              label(for="pt8") Кабели специального назначения
+            .filter-item 
+              input#pt9(type="checkbox", name="pt9")
+              label(for="pt9") Кабель-каналы настенные
+            .filter-item 
+              input#pt10(type="checkbox", name="pt10")
+              label(for="pt10") Кабельные вводы
+    .catalog-filter
+      a.btn-filter.collapsed(role='button', data-toggle='collapse', href='#brand') Бренд
+      #brand.collapse.filter-list
+        .filter-content 
+          .scrollbarAdded.filter-inner
+            .filter-item 
+              input#br1(type="checkbox", name="br1")
+              label(for="br1") Воронежкабель
+            .filter-item 
+              input#br2(type="checkbox", name="br2")
+              label(for="br2") КОНКОРД
+            .filter-item 
+              input#br3(type="checkbox", name="br3")
+              label(for="br3") Кабель ГОСТ
+            .filter-item 
+              input#br4(type="checkbox", name="br4")
+              label(for="br4") Кабэкс
+            .filter-item 
+              input#br5(type="checkbox", name="br5")
+              label(for="br5") Людиновокабель
+            .filter-item 
+              input#br6(type="checkbox", name="br6")
+              label(for="br6") Воронежкабель
+            .filter-item 
+              input#br7(type="checkbox", name="br7")
+              label(for="br7") КОНКОРД
+            .filter-item 
+              input#br8(type="checkbox", name="br8")
+              label(for="br8") Кабель ГОСТ
+            .filter-item 
+              input#br9(type="checkbox", name="br9")
+              label(for="br9") Кабэкс
+            .filter-item 
+              input#br10(type="checkbox", name="br10")
+              label(for="br10") Людиновокабель
+    .catalog-filter
+      a.btn-filter.collapsed(role='button', data-toggle='collapse', href='#cut') Номин. сечение проводника, мм
+      #cut.collapse.filter-list
+        .filter-content 
+          .scrollbarAdded.filter-inner
+            .filter-item 
+              input#cut1(type="checkbox", name="cut1")
+              label(for="cut1") 1.5
+            .filter-item 
+              input#cut2(type="checkbox", name="cut2")
+              label(for="cut2") 2.5
+            .filter-item 
+              input#cut3(type="checkbox", name="cut3")
+              label(for="cut3") 3.5
+    .catalog-filter
+      a.btn-filter.collapsed(role='button', data-toggle='collapse', href='#coreAmount') Количество жил
+      #coreAmount.collapse.filter-list
+        .filter-content 
+          .scrollbarAdded.filter-inner
+            .filter-item 
+              input#ca1(type="checkbox", name="ca1")
+              label(for="ca1") 2
+            .filter-item 
+              input#ca2(type="checkbox", name="ca2")
+              label(for="ca2") 3
+            .filter-item 
+              input#ca3(type="checkbox", name="ca3")
+              label(for="ca3") 4
+    .catalog-filter
+      a.btn-filter.collapsed(role='button', data-toggle='collapse', href='#form') Форма проводника
+      #form.collapse.filter-list
+        .filter-content 
+          .scrollbarAdded.filter-inner
+            .filter-item 
+              input#f1(type="checkbox", name="f1")
+              label(for="f1") circle
+            .filter-item 
+              input#f2(type="checkbox", name="f2")
+              label(for="f2") triangle
+    .catalog-filter
+      a.btn-filter.collapsed(role='button', data-toggle='collapse', href='#material') Материал проводника
+      #material.collapse.filter-list
+        .filter-content 
+          .scrollbarAdded.filter-inner
+            .filter-item 
+              input#m1(type="checkbox", name="m1")
+              label(for="m1") test test test test test test
+            .filter-item 
+              input#m2(type="checkbox", name="m2")
+              label(for="m2") test
+            .filter-item 
+              input#m3(type="checkbox", name="m3")
+              label(for="m3") test
+            .filter-item 
+              input#m4(type="checkbox", name="m4")
+              label(for="m4") test
+            .filter-item 
+              input#m5(type="checkbox", name="m5")
+              label(for="m5") test
+            .filter-item 
+              input#m6(type="checkbox", name="m6")
+              label(for="m6") test
+            .filter-item 
+              input#m7(type="checkbox", name="m7")
+              label(for="m7") test
+    .catalog-filter
+      a.btn-filter.collapsed(role='button', data-toggle='collapse', href='#smoke') С низким дымовыделением
+      #smoke.collapse.filter-list
+        .filter-content 
+          .scrollbarAdded.filter-inner
+            .filter-item 
+              input#sm1(type="checkbox", name="sm1")
+              label(for="sm1") yes
+            .filter-item 
+              input#sm2(type="checkbox", name="sm2")
+              label(for="sm2") no
+    .catalog-filter.d-flex.hidden-md-up.m-t-10
+      button(type="submit").btn.btn-default.w-50.m-r-5 Применить фильтр
+      button(type="reset").btn.btn-default-alt.w-50.m-l-5 Очистить все

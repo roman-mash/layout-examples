@@ -1,0 +1,42 @@
+section.section-result.section-p_type2
+  .container
+    .result-content
+      .result-header 
+        .result-title Ваш заказ оформлен
+        .result-subtitle Александр, здравствуйте!
+        .result-info Ваш заказ <span class="font-w-bold">№ 478 909</span> принят и находится в обработке, детали направлены на почту: example@gmail.com
+      .result-body 
+        .result-list
+          .result-list-header
+            .result-list-header__item Наименование
+            .result-list-header__item Артикул
+            .result-list-header__item Бренд
+            .result-list-header__item Цена
+            .result-list-header__item 
+              .hidden-lg-down Количество
+              .hidden-lg-up Кол-во
+            .result-list-header__item Сумма
+          .result-list-items
+            +result-list-item('Кабель ВВГ-Пнг(А) 3*2.5', '313057911', 'Воронежкабель', '149 ₽/м', '10 м', '1490₽')
+            +result-list-item('Кабель ВВГ-Пнг(А) 3*2.5', '313057911', 'Воронежкабель', '149 ₽/м', '10 м', '1490₽')
+        .result-total
+          .result-total__item
+            .result-total__item-key Общий вес заказа:
+            .result-total__item-value 1,145кг
+          .result-total__item
+            .result-total__item-key Способ оплаты:
+            .result-total__item-value Оплата по счету
+          .result-total__item
+            .result-total__item-key Способ доставки:
+            .result-total__item-value Почта России
+          .result-total__item
+            .result-total__item-key Адрес:
+            .result-total__item-value Республика Башкортостан, г. Уфа, ул. Тестовая, д.25, кв. 11
+          .result-total__item
+            .result-total__item-key Стоимость доставки:
+            .result-total__item-value.accent 0₽
+          .result-total__item
+            .result-total__item-key Итого:
+            .result-total__item-value.accent 1 507,99₽
+        .results-back 
+          a(href="/").btn.btn-default-alt.btn-back-link Продолжить покупки

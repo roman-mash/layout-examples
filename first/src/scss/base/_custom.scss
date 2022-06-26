@@ -1,0 +1,143 @@
+.page-logo {
+  width: 133px;
+  height: 40px;
+  flex-shrink: 0;
+  @media (max-width: 575.98px) {
+    height: 35px;
+    width: 117px;
+  }
+}
+
+.section-py {
+  padding: 80px 0;
+  @media (max-width: 767.98px) {
+    padding: 60px 0;
+  }
+}
+.section-py2 {
+  padding: 40px 0 80px;
+  @media (max-width: 767.98px) {
+    padding: 30px 0 60px;
+  }
+}
+.section-pb {
+  padding: 0 0 80px;
+  @media (max-width: 767.98px) {
+    padding: 0 0 60px;
+  }
+}
+
+.btn-outline {
+  width: 100%;
+  display: block;
+  padding: 22px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: $clr-text;
+  background-color: #fff;
+  transition: all 0.2s linear;
+  .icon-plus {
+    margin-right: 10px;
+  }
+
+  &--main {
+    border: 1px solid $clr-main;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $clr-main;
+      color: $clr-text;
+    }
+  }
+}
+.icon-plus {
+  width: 12px;
+  height: 12px;
+  background-image: url('./../images/icons/plus.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.section-title {
+  margin: 0;
+  font-family: $font-family-alt;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  color: $clr-text;
+  @media (max-width: 767.98px) {
+    font-size: 28px;
+  }
+}
+.section-title3 {
+  margin: 0;
+  font-family: $font-family-alt;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 135%;
+  color: $clr-text;
+  @media (max-width: 767.98px) {
+    font-size: 20px;
+  }
+}
+.section-subtitle {
+  margin: 0;
+  font-family: $font-family-alt;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  letter-spacing: -0.005em;
+  color: $clr-text;
+  padding-left: 18px;
+  position: relative;
+  @media (max-width: 767.98px) {
+    font-size: 20px;
+    line-height: 115%;
+    padding-left: 13px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 24px;
+    background-color: $clr-main;
+    @media (max-width: 767.98px) {
+      height: 20px;
+    }
+  }
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='radio'],
+input[type='checkbox'],
+input[type='file'] {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.order-guarantees {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: $clr-text;
+}

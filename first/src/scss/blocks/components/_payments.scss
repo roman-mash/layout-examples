@@ -1,0 +1,44 @@
+.payments {
+  display: flex;
+  align-items: center;
+  &__item {
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.master-card {
+      width: 47px;
+      height: 30px;
+      background-image: url('./../images/icons/payments/mastercard.svg');
+    }
+    &.visa {
+      width: 47px;
+      height: 30px;
+      background-image: url('./../images/icons/payments/visa.svg');
+    }
+    &.mir {
+      width: 48px;
+      height: 30px;
+      background-image: url('./../images/icons/payments/mir.svg');
+    }
+    &.apple-pay {
+      width: 31px;
+      height: 30px;
+      background-image: url('./../images/icons/payments/applepay.svg');
+    }
+    &.google-pay {
+      width: 51px;
+      height: 20px;
+      background-image: url('./../images/icons/payments/googlepay.svg');
+    }
+    &.yoomoney {
+      width: 97px;
+      height: 20px;
+      background-image: url('./../images/icons/payments/yoomoney.svg');
+    }
+  }
+}

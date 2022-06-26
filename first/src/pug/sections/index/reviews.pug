@@ -1,0 +1,53 @@
+section.section-reviews.section-py.bg-clr-main
+  .container
+    .section-top.m-b-30
+      h2.section-title Отзывы
+    .reviews-block.block-with-dropdown
+      // Nav tabs
+      button.dropdown-btn-tabs.d-block.d-md-none Описание товара
+      ul.nav.nav-pills(role='tablist')
+        li.active(role='presentation')
+          a(href='#reviews-tab', role='tab', data-toggle='tab') Отзывы
+        li(role='presentation')
+          a(href='#thank-tab', role='tab', data-toggle='tab') Благодарственные письма
+        li(role='presentation')
+          a(href='#screenshots-tab', role='tab', data-toggle='tab') Скриншоты с почты
+      // Tab panes
+      .tab-content
+        #reviews-tab.tab-pane.fade.in.active(role='tabpanel') 
+          .reviews-slider.btns-slider-default 
+            .reviews-slider-wrap.slick-slider-alt
+              +reviews-slide('Иван И.', '25.01.2022', 'Хочу выразить огромную благодарность этому сайту, так как они очень выручили меня и моего друга. Работы прошли спокойно, а мы сэкономили свое время.', '4,5')
+              +reviews-slide('Мария М.', '23.01.2022', 'Хочу выразить огромную благодарность этому сайту, так как они очень выручили меня и моего друга. Работы прошли спокойно, а мы сэкономили свое время.', '4,5')
+              +reviews-slide('Иван И.', '25.01.2022', 'Хочу выразить огромную благодарность этому сайту, так как они очень выручили меня и моего друга. Работы прошли спокойно, а мы сэкономили свое время.', '4,5')
+            .slider-controls
+              .btns-switch
+                button.btn-switch.prev
+                  span.arrow
+                button.btn-switch.next
+                  span.arrow
+        #thank-tab.tab-pane.fade(role='tabpanel')
+          .thank-slider.btns-slider-default 
+            .thank-slider-wrap.slick-slider-alt
+              +thank-slide('thank1.png')
+              +thank-slide('thank1.png')
+              +thank-slide('thank1.png')
+              +thank-slide('thank1.png')
+            .slider-controls
+              .btns-switch
+                button.btn-switch.prev
+                  span.arrow
+                button.btn-switch.next
+                  span.arrow
+        #screenshots-tab.tab-pane.fade(role='tabpanel')
+          .screenshots-slider.btns-slider-default 
+            .screenshots-slider-wrap.slick-slider-alt
+              +screenshots-slide('screenshot1.png')
+              +screenshots-slide('screenshot1.png')
+              +screenshots-slide('screenshot1.png')
+            .slider-controls
+              .btns-switch
+                button.btn-switch.prev
+                  span.arrow
+                button.btn-switch.next
+                  span.arrow

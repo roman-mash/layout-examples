@@ -1,0 +1,144 @@
+.main-slide-content {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  @media (max-width: 1199.98px) {
+    height: 646px;
+  }
+  @media (max-width: 991.98px) {
+  }
+  @media (max-width: 767.98px) {
+    height: 593px;
+  }
+}
+.main-slide {
+  &__media {
+    height: 100%;
+    width: 100%;
+  }
+  &__text {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    margin-top: 230px;
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: $clr-text;
+    @media (max-width: 1199.98px) {
+      font-size: 40px;
+    }
+    @media (max-width: 767.98px) {
+      margin-top: 162px;
+      font-size: 36px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    color: $clr-text;
+  }
+}
+
+.main-slider {
+  position: relative;
+
+  .btn-switch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7px 12px;
+    transition: all 0.2s linear;
+    &.prev {
+      margin-right: 20px;
+      background-image: url('./../images/icons/arrow-left.svg');
+      &:hover,
+      &:focus {
+        background-image: url('./../images/icons/arrow-left-main-alt.svg');
+      }
+    }
+    &.next {
+      background-image: url('./../images/icons/arrow-right.svg');
+      &:hover,
+      &:focus {
+        background-image: url('./../images/icons/arrow-right-main-alt.svg');
+      }
+    }
+  }
+}
+
+.btns-switch {
+  display: flex;
+  align-items: center;
+}
+
+.main-slider {
+  .slider-controls {
+    position: absolute;
+    left: 0;
+    top: 157px;
+    width: 100%;
+    @media (max-width: 1199.98px) {
+      top: 160px;
+    }
+    @media (max-width: 767.98px) {
+      top: 90px;
+    }
+
+    &_2 {
+      top: auto;
+      bottom: 60px;
+      @media (max-width: 1199.98px) {
+        top: auto;
+      }
+      @media (max-width: 767.98px) {
+        top: auto;
+      }
+    }
+  }
+}
+
+.slider-counter {
+  display: flex;
+  align-items: flex-end;
+  .counter-current {
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px $clr-text;
+  }
+  .counter-divider {
+    font-family: $font-family;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $clr-text;
+    margin: 0 5px 0 5px;
+  }
+  .counter-total {
+    font-family: $font-family;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $clr-text;
+  }
+}

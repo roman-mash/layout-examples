@@ -1,0 +1,113 @@
+section.section-compare.section-p_type2
+  .container  
+    .compare
+      .section-top.m-b-35.m-lg-b-50.justify-content-start
+        .page-title.m-md-r-20.m-lg-r-25 Избранные товары
+        button.btn-delete.m-t-10.m-md-t-0 Удалить все товары
+      .compare-block.compare-block_type--sm
+        .compare-filters 
+          .compare-filter 
+            .compare-filter__title Категории товаров
+            .compare-filter__content 
+              .sort-btn
+                .dropdown.dropdown-sort
+                  button.dropdown-btn#catalog1List(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Кабель и провод
+                  ul.dropdown-menu(aria-labelledby='catalog1List')
+                    li.active Кабель и провод
+                    li Светотехника
+                    li Вентиляция
+                    li Электротовары
+          .compare-filter 
+            .compare-filter__title Показывать
+            .compare-filter__content 
+            .showmode-filters
+              .filter-item 
+                input#sm1(type="radio", name="showmode", checked)
+                label(for="sm1") Только различающиеся характеристики
+              .filter-item 
+                input#sm2(type="radio", name="showmode")
+                label(for="sm2") Только основные характеристики
+              .filter-item 
+                input#sm3(type="radio", name="showmode")
+                label(for="sm3") Все характеристики
+        .compare-products
+          .slider-compare.slider-btns-dflt
+            .slider-compare-wrap.margin-sliders
+              .slide-content
+                +product-card("Кабель КВОРЭН 1*6-5")
+              .slide-content
+                +product-card("Кабель КВОРЭН 1*6-5")
+              .slide-content
+                +product-card("Кабель КВОРЭН 1*6-5")
+              .slide-content
+                +product-card("Кабель КВОРЭН 1*6-5")
+              .slide-content
+                +product-card("Кабель КВОРЭН 1*6-5")
+              .slide-content
+                +product-card("Кабель КВОРЭН 1*6-5")
+            .slider-controls
+              .btns-switch
+                button.btn-no-styles.btn-switch.prev
+                button.btn-no-styles.btn-switch.next
+      .compare-block.m-t-35.m-md-t-40.m-lg-t-30
+        .compare-filters
+          .compare-points.compare-points-main
+            .compare-point.compare-point_1 Бренд
+            .compare-point.compare-point_2 Номин. сечение проводника, мм
+            .compare-point.compare-point_3 Количество жил
+            .compare-point.compare-point_4 Форма проводника
+            .compare-point.compare-point_5 Материал проводника
+            .compare-point.compare-point_6 С низким дымовыделением
+        .compare-products
+          .slider-compare-tabs.slider-btns-dflt
+            .slider-compare-tabs-wrap.margin-sliders
+              .slide-content
+                .compare-points 
+                  .compare-point.compare-point_1 Воронежкабель
+                  .compare-point.compare-point_2 1
+                  .compare-point.compare-point_3 2
+                  .compare-point.compare-point_4 -
+                  .compare-point.compare-point_5 Материал проводника
+                  .compare-point.compare-point_6 -
+              .slide-content
+                .compare-points 
+                  .compare-point.compare-point_1 КОНКОРД
+                  .compare-point.compare-point_2 1,5
+                  .compare-point.compare-point_3 5
+                  .compare-point.compare-point_4 Форма проводника
+                  .compare-point.compare-point_5 Материал проводника
+                  .compare-point.compare-point_6 -
+              .slide-content
+                .compare-points 
+                  .compare-point.compare-point_1 Кабель ГОСТ
+                  .compare-point.compare-point_2 5
+                  .compare-point.compare-point_3 3
+                  .compare-point.compare-point_4 Форма проводника
+                  .compare-point.compare-point_5 -
+                  .compare-point.compare-point_6 С низким дымовыделением
+              .slide-content
+                .compare-points 
+                  .compare-point.compare-point_1 КОНКОРД
+                  .compare-point.compare-point_2 1,5
+                  .compare-point.compare-point_3 5
+                  .compare-point.compare-point_4 Форма проводника
+                  .compare-point.compare-point_5 Материал проводника
+                  .compare-point.compare-point_6 -
+              .slide-content
+                .compare-points 
+                  .compare-point.compare-point_1 КОНКОРД
+                  .compare-point.compare-point_2 1,5
+                  .compare-point.compare-point_3 5
+                  .compare-point.compare-point_4 Форма проводника
+                  .compare-point.compare-point_5 Материал проводника
+                  .compare-point.compare-point_6 -
+              .slide-content
+                .compare-points 
+                  .compare-point.compare-point_1 Кабель ГОСТ
+                  .compare-point.compare-point_2 5
+                  .compare-point.compare-point_3 3
+                  .compare-point.compare-point_4 Форма проводника
+                  .compare-point.compare-point_5 -
+                  .compare-point.compare-point_6 С низким дымовыделением
+            

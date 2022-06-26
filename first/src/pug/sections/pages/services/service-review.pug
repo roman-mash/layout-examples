@@ -1,0 +1,99 @@
+#service-review.tab-pane.fade(role='tabpanel')
+  .service-review
+    .f-row 
+      .f-col-12.f-col-xl-8
+        .service-review-top.m-b-20.m-md-b-30
+          .service-review__title Комментарии
+          a(href="#").service-review__add-comment Добавить комментарий
+        form(action="").add-comment
+          .form-group 
+            input.input-white(type="text", name="", placeholder="Имя или никнейм")
+          .form-group 
+            textarea.textarea-white(name="comment", placeholder="Комментарий")
+          .add-comment__files
+            .comment-file
+              span.comment-file__icon.flex-img
+                img(src="./images/icons/paper-clip-grey.svg", alt="")
+              span.comment-file__text методичка.docx
+            .comment-file
+              span.comment-file__icon.flex-img
+                img(src="./images/icons/paper-clip-grey.svg", alt="")
+              span.comment-file__text методичка.docx
+          .add-comment__bottom
+            .add-attachment
+              input#add-attachment(type="file", name="")
+              label(for="add-attachment").add-attachment-lbl
+                span.add-attachment-lbl__icon.flex-img
+                  img(src="./images/icons/paper-clip-grey.svg", alt="")
+                span.add-attachment-lbl__text Прикрепить изображение
+            button(type="submit").btn.btn-default Отправить
+        .comments-list
+          .comment
+            .comment-item
+              .comment-author
+                a(href="#").comment-author__img.flex-img
+                  span.author-icon И
+                .comment-author__info
+                  a(href="#").comment-author__name Иван Иванов
+                  .comment-author__time 25 января 2022
+              .comment-text
+                p Хочу выразить огромную благодарность этому сайту, так как они очень выручили меня и моего друга. Работы прошли спокойно, а мы сэкономили свое время.
+            .comment-replies
+              .comment-reply
+                .comment-author
+                  a(href="#").comment-author__img.flex-img
+                    img(src="./images/icons/logo.svg", alt="", width="29", height="29")
+                  .comment-author__info
+                    a(href="#").comment-author__name аывавы.рф
+                    .comment-author__time 25 января 2022
+                .comment-text
+                  p Спасибо, стараемся!
+              form(action="").add-comment
+                .form-group 
+                  input.input-white(type="text", name="", placeholder="Имя или никнейм")
+                .form-group 
+                  textarea.textarea-white(name="comment", placeholder="Комментарий")
+                .add-comment__files
+                .add-comment__bottom
+                  .add-attachment
+                    input#add-attachment(type="file", name="")
+                    label(for="add-attachment").add-attachment-lbl
+                      span.add-attachment-lbl__icon.flex-img
+                        img(src="./images/icons/paper-clip-grey.svg", alt="")
+                      span.add-attachment-lbl__text Прикрепить изображение
+                  button(type="submit").btn.btn-default Отправить
+          .comment
+            .comment-item
+              .comment-author
+                a(href="#").comment-author__img.flex-img
+                  span.author-icon М
+                .comment-author__info
+                  a(href="#").comment-author__name Мария Петрова
+                  .comment-author__time 25 января 2022
+              .comment-text
+                p Хочу выразить огромную благодарность этому сайту, так как они очень выручили меня и моего друга. Работы прошли спокойно, а мы сэкономили свое время.
+            .comment-replies
+              .comment-reply
+                .comment-author
+                  a(href="#").comment-author__img.flex-img
+                    img(src="./images/icons/logo.svg", alt="", width="29", height="29")
+                  .comment-author__info
+                    a(href="#").comment-author__name ывафыва.рф
+                    .comment-author__time 25 января 2022
+                .comment-text
+                  p Спасибо, стараемся!
+                .comment-btns 
+                  a(href="/").btn.btn-default-alt Оставить комментарий 
+          .comment
+            .comment-item
+              .comment-author
+                a(href="#").comment-author__img.flex-img
+                  span.author-icon Н
+                .comment-author__info
+                  a(href="#").comment-author__name Николай Федоров
+                  .comment-author__time 25 января 2022
+              .comment-text
+                p Хочу выразить огромную благодарность этому сайту, так как они очень выручили меня и моего друга. Работы прошли спокойно, а мы сэкономили свое время.
+              .comment-btns 
+                a(href="/").btn.btn-default-alt Оставить комментарий 
+

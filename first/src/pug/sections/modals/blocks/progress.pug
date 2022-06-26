@@ -1,0 +1,12 @@
+#progress.modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog.modal-lg(role='document')
+    .modal-content
+      button.btn-close-modal(data-dismiss="modal")
+      .modal-progress
+        .progressbar
+          .progressbar__title Производится повышение уникальности документа
+          .progress-line
+            .progress-line__actual(style='width:33%;') 33%
+          .progressbar__wait-time Время ожидания 2-3 мин
+        .d-flex.justify-content-center.align-items-center.m-t-25
+            button(type="submit").btn.btn-default-alt Продолжить

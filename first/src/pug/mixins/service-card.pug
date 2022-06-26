@@ -1,0 +1,9 @@
+mixin service-card(img, title, text, price, link)
+  .f-col-12.f-col-md-6.f-col-lg-4.m-b-15.m-md-b-20.m-lg-b-30
+    a(href=link).service-card 
+      .service-card__img.object-fit
+        img(src="./images/services/" + img, alt="")
+      .service-card__info
+        .service-card__title #{title}
+        .service-card__text #{text}
+        .service-card__price #{price}

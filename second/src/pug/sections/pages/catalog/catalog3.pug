@@ -1,0 +1,30 @@
+section.section-catalog.section-p_type2
+  .container
+    .catalog-content
+      .catalog3-content 
+        include ./catalog3-filters.pug
+        .page-content
+          .page-title.d-none.d-md-block.m-b-20.m-lg-b-30 Кабельная продукция
+          include ./catalog-sorting.pug
+          .products-list.tile
+            .products-list__namings
+              .products-list__namings-item Фото
+              .products-list__namings-item Наименование
+              .products-list__namings-item Бренд
+              .products-list__namings-item Наличие
+              .products-list__namings-item Цена
+              .products-list__namings-item Кол-во
+            .products-list__items
+              +product-card('Кабель ВВГ-Пнг(А) 3*2.5', 'Воронежкабель', '313057911', 'Под заказ', "По запросу", true)
+              +product-card('Кабель АПвВнг(А)-LS, 15 кВ', 'Конкорд', '3130579119', '5500 м', '75 ₽/м')
+              +product-card('Кабель ПвВнг(А)-LS, 15 кВ', 'Людиновокабель', '4562228002', '1449 м', '129 ₽/м')
+              +product-card('Кабель ВВГ-Пнг(А) 3*2.5', 'Воронежкабель', '313057911', 'Под заказ', "По запросу")
+              +product-card('Кабель АПвВнг(А)-LS, 15 кВ', 'Конкорд', '3130579119', '5500 м', '75 ₽/м')
+              +product-card('Кабель ПвВнг(А)-LS, 15 кВ', 'Людиновокабель', '4562228002', '1449 м', '129 ₽/м')
+              +product-card('Кабель ВВГ-Пнг(А) 3*2.5', 'Воронежкабель', '313057911', 'Под заказ', "По запросу", true)
+              +product-card('Кабель АПвВнг(А)-LS, 15 кВ', 'Конкорд', '3130579119', '5500 м', '75 ₽/м')
+              +product-card('Кабель ПвВнг(А)-LS, 15 кВ', 'Людиновокабель', '4562228002', '1449 м', '129 ₽/м')
+              +product-card('Кабель ВВГ-Пнг(А) 3*2.5', 'Воронежкабель', '313057911', 'Под заказ', "По запросу")
+              +product-card('Кабель АПвВнг(А)-LS, 15 кВ', 'Конкорд', '3130579119', '5500 м', '75 ₽/м')
+              +product-card('Кабель ПвВнг(А)-LS, 15 кВ', 'Людиновокабель', '4562228002', '1449 м', '129 ₽/м', true)
+          include ./catalog-pagination.pug

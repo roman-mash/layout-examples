@@ -1,0 +1,78 @@
+.btns-slider-default,
+.btns-slider-secondary {
+  position: relative;
+  .btns-switch {
+    display: flex;
+    position: absolute;
+    top: -88px;
+    right: 0;
+    @media (max-width: 767.98px) {
+      position: static;
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .btn-switch {
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .arrow {
+      display: block;
+      width: 18px;
+      height: 11px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      opacity: 0.33;
+      transition: opacity 0.2s linear;
+    }
+
+    &:hover {
+      .arrow {
+        opacity: 1;
+      }
+    }
+    &.prev {
+      margin-right: 15px;
+      .arrow {
+        background-image: url('./../images/icons/arrow-left-long.svg');
+      }
+    }
+    &.next {
+      .arrow {
+        background-image: url('./../images/icons/arrow-right-long.svg');
+      }
+    }
+  }
+}
+
+.reviews-block--paged {
+  .btns-slider-default {
+    .btn-switch {
+      background-color: #f5f5f5;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-color: $clr-main;
+      }
+    }
+  }
+}
+
+.btns-slider-secondary {
+  .btn-switch {
+    background-color: #f5f5f5;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: $clr-main;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mixin brand-group(title, ...items)
+  .brand-group 
+    .brand-group__title(class!=attributes.class) #{title}
+    ul.brand-group__list
+      each item in items
+        li
+          a(href="#") #{item}

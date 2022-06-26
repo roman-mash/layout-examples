@@ -1,0 +1,102 @@
+.header-bottom {
+  background-color: $clr-main;
+  &.scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 150;
+  }
+
+  &-block {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+  }
+  .search-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .input-group {
+      width: 100%;
+      position: relative;
+    }
+    input {
+      width: 100%;
+      padding: 13px 20px 12px;
+      font-size: 16px;
+      line-height: 100%;
+      @media (max-width: 767.98px) {
+        padding-right: 40px;
+        padding: 12px 20px 13px;
+      }
+    }
+  }
+}
+
+.btn-search-sm {
+  display: none;
+  @media (max-width: 767.98px) {
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    background-image: url('./../images/icons/loupe-black.svg');
+  }
+}
+
+.btn-catalog {
+  flex-shrink: 0;
+  margin-right: 30px;
+  min-width: 165px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $clr-text-white;
+  padding: 15px 69px 15px 35px;
+  background-image: url('./../images/icons/burger.svg');
+  background-repeat: no-repeat;
+  background-size: 19px 15px;
+  background-position: center right 35px;
+
+  @media (max-width: 991.98px) {
+    padding: 15px 66px 15px 31px;
+    background-position: center right 32px;
+    min-width: auto;
+  }
+  @media (max-width: 767.98px) {
+    padding: 15px 57px 15px 22px;
+    background-position: center right 23px;
+    margin-right: 10px;
+  }
+}
+
+.btn-search {
+  flex-shrink: 0;
+  margin-left: 30px;
+  min-width: 165px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  color: $clr-text-white;
+  padding: 15px 48px 15px 75px;
+  background-image: url('./../images/icons/loupe.svg');
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left 49px;
+
+  @media (max-width: 991.98px) {
+    padding: 15px 13px 15px 40px;
+    background-position: center left 14px;
+    min-width: auto;
+  }
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+}

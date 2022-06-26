@@ -1,0 +1,8 @@
+mixin result-list-item(name, article, producer, price, count, sum)
+  .result-list-item
+    a(href="/product.html").result-list-item__name #{name}
+    .result-list-item__article <span class="point-description">Арт:</span> #{article}
+    .result-list-item__producer <span class="point-description">Бренд:</span> #{producer}
+    .result-list-item__price <span class="point-description">Цена:</span> #{price}
+    .result-list-item__count <span class="point-description">Количество:</span> #{count}
+    .result-list-item__sum <span class="point-description">Сумма:</span> #{sum}

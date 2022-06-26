@@ -1,0 +1,44 @@
+include ./mixins.pug
+
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+
+    //  Favicon 
+    link(rel="icon", type="image/ico", href="./images/favicon.ico")
+    
+    title #{title}
+
+    //  Styles 
+    link(rel="stylesheet", href="vendor/bootstrap/css/bootstrap-custom.min.css")
+    link(rel="stylesheet", href="vendor/fancybox/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="vendor/slick/slick.css")
+    link(rel="stylesheet", href="vendor/slick/slick-theme.css")
+    link(rel="stylesheet", href="vendor/select2/css/select2.min.css")
+    link(rel="stylesheet", href="css/helper-classes.min.css")
+    link(rel="stylesheet", href="css/main.css")
+  body(class= bodyClass)
+    .wrapper
+      block content
+
+    block footer
+
+    include ./../sections/modals/callback.pug
+
+    //  JavaScript
+    script(type="text/javascript", src="vendor/jquery/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="vendor/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="vendor/fancybox/jquery.fancybox.min.js")
+    script(type="text/javascript", src="vendor/slick/slick.min.js")
+    script(type="text/javascript", src="vendor/mask/jquery.mask.min.js")
+    script(type="text/javascript", src="vendor/object-fit/ofi.min.js")
+    script(type="text/javascript", src="vendor/smoothscrollbar/smooth-scrollbar.js")
+    script(type="text/javascript", src="vendor/match-height/jquery.matchHeight.js")
+    script(type="text/javascript", src="vendor/select2/js/select2.min.js")
+    script(type="text/javascript", src="vendor/select2/js/i18n/ru.js")
+    script(type="text/javascript", src="js/main.js")

@@ -1,0 +1,164 @@
+#service-order.tab-pane.fade.in.active(role='tabpanel')
+  form(action="").service-order-form 
+    .f-row 
+      .f-col-12.f-col-md-8
+        .order-item.text-input.m-b-35.m-md-b-45
+          .order-item__content
+            .form-group 
+              input#file-input-lg.file-input(type="file", name="files")
+              label.file-lbl.file-lbl--lg(for="file-input-lg") 
+                span.file-lbl__text Нажмите, чтобы выбрать файл<br> или перетащите для загрузки
+                span.file-lbl__info Поддерживаются форматы: txt, docx, rtf
+                span.file-lbl__info (Максимальный размер: 20 МБ)
+            .order-guarantees Повысить уникальность текста является важной заключительной частью  написания дипломной или курсовой работы. Без правильного оформления вы не сможете пройти Нормоконтроль и получить допуск к защите. Если у вас нет времени, либо вы не хотите разбираться во всех тонкостях ГОСТа, вы можете довериться нашим специалистам.
+      .f-col-12.f-col-md-4
+        .order-faq.m-b-35.m-md-b-0
+          a(href="#faq", data-toggle="modal").order-faq__item Как это работает?
+          a(href="#faq", data-toggle="modal").order-faq__item Я пройду Антиплагиат.ВУЗ?
+          a(href="#faq", data-toggle="modal").order-faq__item Какие есть гарантии?
+          a(href="#faq", data-toggle="modal").order-faq__item Вопрос-ответ
+      .f-col-12.f-col-xl-8
+        .order-item.m-b-35.m-md-b-45
+          .order-item__top.m-b-25.m-md-b-30
+            .order-item__title Выберите тип работы
+            a(href="/").order-item__link Цена изменилась, почему?
+          .order-item__content
+            .service-choose-list
+              +service-choose('sch1', 'Статья, эссе', '1-8 стр', '249 ₽')
+              +service-choose('sch2', 'Реферат, курсовая работа', '8-49 стр', '499 ₽')
+              +service-choose('sch3', 'ВКР, диплом, диссертация', '50-120 стр', '999 ₽')
+              +service-choose('sch4', 'Кандидатская/докторская диссертация', 'от 120 стр', '1 999 ₽')
+        .order-item.m-b-35.m-md-b-45
+          .order-item__title.m-b-25.m-md-b-30 Выберите систему проверки
+          .order-item__content
+            .services-container
+              .service-circle
+                input(type="radio", name="service-circle", id='sc1')
+                label(for='sc1').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Антиплагиат ВУЗ / Антиплагиат ру, проверка в WORD, в том числе при проверке с модулем OCR
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/antiplagiat.svg", alt="")
+              .service-circle
+                input(type="radio", name="service-circle", id='sc12')
+                label(for='sc12').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Антиплагиат ВУЗ / Антиплагиат ру, проверка в PDF
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/antiplagiat.svg", alt="")
+              .service-circle
+                input(type="radio", name="service-circle", id='sc4')
+                label(for='sc4').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Рукотекст
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/rucontext.svg", alt="")
+              .service-circle
+                input(type="radio", name="service-circle", id='sc3')
+                label(for='sc3').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title ЕТХТ
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/etxt.svg", alt="")
+                  .service-circle-divider /
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Advego
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/advego.png", alt="")
+                  .service-circle-divider /
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Antiplagiatism.net
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/antiplagiarizm.png", alt="")
+                  .service-circle-divider /
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Text.ru
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/c.svg", alt="")
+                  .service-circle-divider /
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title ВКР.ВУЗ
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/vkr.png", alt="")
+                  .service-circle-divider /
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Content Watch
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/content-watch.png", alt="")
+              .service-circle
+                input(type="radio", name="service-circle", id='sc2')
+                label(for='sc2').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Strikeplagiarism
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/strike.png", alt="")
+              .service-circle
+                input(type="radio", name="service-circle", id='sc7')
+                label(for='sc7').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Turnitin
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/turnitin.png", alt="")
+              .service-circle
+                input(type="radio", name="service-circle", id='sc8')
+                label(for='sc8').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Unichek
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/unicheck.png", alt="")
+                  .service-circle-divider /
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Blackboard
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/blackboard.png", alt="")
+                  .service-circle-divider /
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Platonus
+                    .service-circle-lbl__item-icon.flex-img
+                      img(src="./images/systems/platonus.png", alt="")
+              .service-circle
+                input(type="radio", name="service-circle", id='sc9')
+                label(for='sc9').service-circle-lbl
+                  .service-circle-lbl__item
+                    .service-circle-lbl__item-title Любая другая система, которой нет в списке
+        .order-item.m-b-35.m-md-b-45
+          .order-item__title.m-b-25.m-md-b-30 Дополнительные услуги
+          .order-item__content
+            .extra-service-list
+              +extra-service('es1', 'Сопровождение до защиты', '99 ₽', false, 'С вами на связи будет персональный менеджер, который ответит на все возникающие вопросы.')
+              +extra-service('es2', 'Преподавательский отчет', '99 ₽', false,  'Вместе с готовой работой вышлем вам отчет с Антиплагиат ВУЗ.')
+              +extra-service('es3', 'Улучшенная маскировка', '99 ₽', false,  'Рекомендуем включать данную функцию. Улучшенная маскировка вызывает меньше подозрений у проверяющего.')
+              +extra-service('es4', 'Полный аудит документа', '199 ₽', false,  'Проверка на техническое кодирование, скрытый текст и на наличие знака "подозрительный документ". Проведем аудит документа, выявим наличие скрытого текста, скрытых символов и знака обход Антиплагиата. Дадим рекомендации по работе с файлом.')
+              +extra-service('es5', 'Очистка документа от скрытого текста и технического кодирования', '500 ₽', false,  'Уберем знак "подозрительный документ" в Антиплагиате и отметку "Обход системы" в Руконтексте. Выполним чистку вашего документа, избавим файл от скрытого текста, скрытых знаков и замен букв. Приведем работу в исходной состояние когда он не будет показывать "подозрительный документ" в Антиплагиате и отметку "Обход системы" в Руконтексте.')
+        .order-item.m-b-35.m-md-b-45
+          .order-item__title.m-b-25.m-md-b-30 Введите данные
+          .order-item__content
+            .input-data
+              .input-data-item
+                .input-data-item__top
+                  label.input-data-item__top-title Электронная почта
+                  a(href="#").btn-no-email Нет email? Нажмите сюда
+                .form-group 
+                  input.input-default(type="email", name="email", placeholder="example@example.ru")
+              .input-data-item
+                .input-data-item__top
+                  label.input-data-item__top-title Промокод (если имеется)
+                .form-group 
+                  input.input-default(type="text", name="promocode", placeholder="example")
+        .order-counter 4022 студента уже сделали заказ!
+        .subscribe-banner.m-t-35.m-md-t-40
+          .subscribe-banner__title Нет промокода, но вы хотите получить скидку на услугу? Поделись с друзьями, подпишись, и получи скудку 5%!
+          .subscribe-banner__socials.socials-colored
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/telegram.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/vk.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/instagram.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/facebook.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/whatsapp.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/viber.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/ok.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/youtube.svg);").socials-colored__item
+          a(href="#").btn.btn-default-alt Подписаться 
+        .custom-checkbox.order-privacy
+          input#privacy(type="checkbox", name="privacy", checked)
+          label(for="privacy") Я согласен с условиями <a href="#">Политики конфиденциальности</a>
+        button(type="submit").btn.btn-default.m-t-30.btn-submit-order Заказать

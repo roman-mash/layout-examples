@@ -1,0 +1,7 @@
+mixin advantage-item(title, info, img)
+  .f-col-6.f-col-md-3.m-b-15.m-md-b-30  
+    .advantage-item
+      .advantage-item__img.flex-img 
+        img(src="./images/icons/advantages/" + img + ".svg", alt="")
+      .advantage-item__title #{title}
+      .advantage-item__info #{info}

@@ -1,0 +1,31 @@
+.breadcrumb-nav {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.breadcrumb {
+  li,
+  li a,
+  li.active {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(48, 48, 48, 0.5);
+  }
+  > li + li {
+    padding-left: 32px;
+    position: relative;
+    &::before {
+      padding: 0;
+      content: '';
+      position: absolute;
+      top: calc(50% - 5px);
+      left: 10px;
+      width: 12px;
+      height: 10px;
+      background-image: url('./../images/icons/arrow-breadcrumb.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}

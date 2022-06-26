@@ -1,0 +1,33 @@
+.service-review-top {
+  display: flex;
+  align-items: baseline;
+}
+.service-review__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  color: $clr-text;
+  @media (max-width: 575.98px) {
+    font-size: 16px;
+  }
+}
+
+.service-review__add-comment {
+  display: block;
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: $clr-text-alt2;
+  transition: all 0.2s linear;
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

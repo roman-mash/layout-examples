@@ -1,0 +1,20 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'Проверить уникальность текста';
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		+breadcrumbs('Проверить уникальность текста', 'Услуги')
+		include ./../sections/pages/services/check-unique/index.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

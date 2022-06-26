@@ -1,0 +1,20 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'Services — Anti-Antiplagiat';
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		+breadcrumbs('Услуги')
+		include ./../sections/pages/services/services-page.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

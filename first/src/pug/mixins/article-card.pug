@@ -1,0 +1,10 @@
+mixin article-card(img, date, title)
+  .f-col-12.f-col-sm-6.f-col-md-4.f-col-xl-3.m-b-30
+    .article-card 
+      a(href="/article.html").article-card__img.object-fit
+        img(src="./images/blog/" + img, alt="")
+      .article-card__date #{date}
+      a(href="/article.html", title=title).article-card__title #{title}
+      .article-card__categories 
+        .category-badge #аудит
+        .category-badge #делопроизводство

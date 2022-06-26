@@ -1,0 +1,8 @@
+.faq-block {
+  &__item {
+    margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

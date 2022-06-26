@@ -1,0 +1,35 @@
+#payMethod.modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog.modal-xl(role='document')
+    .modal-content.modal-pd-60
+      button.btn-close-modal(data-dismiss="modal")
+      .modal-wrap
+        .modal-title.m-b-25.m-md-b-35.m-lg-b-40 Выберите способ оплаты
+        .modal-chooser
+          .pay-method 
+            .pay-method__title Я из России
+            .pay-method__subtitle Только для банковских карт, выпущенных на территории РФ.
+            .pay-block
+              .pay-block__bill
+                .pay-block__bill-title Итого к оплате:
+                .pay-block__bill-value 249 ₽
+              a.btn.btn-default Оплатить
+            .pay-info
+              .pay-systems.payments
+                .payments__item.master-card
+                .payments__item.visa
+                .payments__item.mir
+                .payments__item.apple-pay
+                .payments__item.google-pay
+                .payments__item.yoomoney
+              .pay-info__text Можно переходить к оплате
+          .pay-method 
+            .pay-method__title Я из другой страны
+            .pay-method__subtitle Для клиентов из других стран мы вынуждены выставлять счета в тенге.
+            .pay-block
+              .pay-block__bill
+                .pay-block__bill-title Итого к оплате:
+                .pay-block__bill-value 249 ₽ = 1567 ₸
+              a.btn.btn-default Оплатить
+            .pay-info
+              .pay-info__text 1 ₽ = 5,6 ₸
+              .pay-info__text Счет будет выставлен по реальному курсу и будет эквивалентен счету в рублях.

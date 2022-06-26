@@ -1,0 +1,99 @@
+section.section-catalog.section-p_type2
+  .container
+    .catalog-content 
+      .page-title.m-b-30.m-md-b-40 Каталог товаров
+      .catalog-block 
+        .catalog-view
+          ul.nav.nav-tabs(role='tablist')
+            li.active(role='presentation')
+              a(href='#category', role='tab', data-toggle='tab') По категориям
+            li(role='presentation')
+              a(href='#brand', role='tab', data-toggle='tab') По брендам 
+        .catalog-categories
+          .tab-content
+            #category.tab-pane.fade.in.active(role='tabpanel')  
+              .category-list
+                .f-row.m-n-b-15.m-n-md-b-30
+                  .f-col-12.f-col-md-6.f-col-lg-4.m-b-15.m-md-b-30
+                    a(href="/catalog2.html").category-list__item
+                      .category-list__item-icon 
+                        img.black(src="./images/icons/catalog-categories/black1.svg", alt="")
+                        img.white(src="./images/icons/catalog-categories/white1.svg", alt="")
+                      .category-list__item-title Кабель и провод
+                  .f-col-12.f-col-md-6.f-col-lg-4.m-b-15.m-md-b-30
+                    a(href="/catalog2.html").category-list__item
+                      .category-list__item-icon 
+                        img.black(src="./images/icons/catalog-categories/black2.svg", alt="")
+                        img.white(src="./images/icons/catalog-categories/white2.svg", alt="")
+                      .category-list__item-title светотехника
+                  .f-col-12.f-col-md-6.f-col-lg-4.m-b-15.m-md-b-30
+                    a(href="/catalog2.html").category-list__item
+                      .category-list__item-icon 
+                        img.black(src="./images/icons/catalog-categories/black3.svg", alt="")
+                        img.white(src="./images/icons/catalog-categories/white3.svg", alt="")
+                      .category-list__item-title вентиляция
+                  .f-col-12.f-col-md-6.f-col-lg-4.m-b-15.m-md-b-30
+                    a(href="/catalog2.html").category-list__item
+                      .category-list__item-icon 
+                        img.black(src="./images/icons/catalog-categories/black4.svg", alt="")
+                        img.white(src="./images/icons/catalog-categories/white4.svg", alt="")
+                      .category-list__item-title электротовары
+                  .f-col-12.f-col-md-6.f-col-lg-4.m-b-15.m-md-b-30
+                    a(href="/catalog2.html").category-list__item
+                      .category-list__item-icon 
+                        img.black(src="./images/icons/catalog-categories/black5.svg", alt="")
+                        img.white(src="./images/icons/catalog-categories/white5.svg", alt="")
+                      .category-list__item-title молниезащита
+                  .f-col-12.f-col-md-6.f-col-lg-4.m-b-15.m-md-b-30
+                    a(href="/catalog2.html").category-list__item
+                      .category-list__item-icon 
+                        img.black(src="./images/icons/catalog-categories/black6.svg", alt="")
+                        img.white(src="./images/icons/catalog-categories/white6.svg", alt="")
+                      .category-list__item-title Завод
+            #brand.tab-pane.fade(role='tabpanel') 
+              .brands-block
+                .brand-logos
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat1.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat2.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat3.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat4.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat1.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat2.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat3.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat4.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat1.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat2.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat3.png", alt="")
+                  a(href="#").brand-logo.flex-img
+                    img(src="./images/clients/cat4.png", alt="")
+                .brand-alphabet
+                  // Активная буква регулируется классом active на li
+                  // Неактивная буква регулируется классом disable на li
+                  .brand-alphabet__item.brand-alphabet__en
+                    +alphabet-list("123", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z") 
+                  .brand-alphabet__item.brand-alphabet__ru
+                    +alphabet-list("А", "Б", "В", "Г", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "Ь", "Э", "Ю", "Я") 
+                .brand-list
+                  +brand-group("123","3м")
+                  +brand-group("A", "ABB", "AC Electric", "AccordTec", "AIZ", "ACTIVISION", "ABB", "AC Electric", "AccordTec", "AIZ", "ACTIVISION")
+                  +brand-group("B", "B.B. Battery", "Ballu", "Ballu-Biemmedue", "Bals", "BTICINO(группа Legrand)", "B.B. Battery", "Ballu", "Ballu-Biemmedue", "Bals", "BTICINO(группа Legrand)")
+                  +brand-group("C", "Cabletech", "CABLOFIL(группа Legrand)", "CADENA")
+                  +brand-group("F", "Fael Luce", "Falcon Eye", "Fametto", "FAROS", "Favor", "FBSystems", "FELO", "FINDER", "FORTEZA", "Fortisflex")
+                  +brand-group("G", "GALAD", "GAUSS(группа VARTON)", "Geliomaster", "GetCall", "GEZE", "GIGALINK", "AC Electric")
+                  +brand-group("H", "Halla", "HAMA", "HAUPA", "HEGEL", "Helukabel", "Helvar", "HENSEL", "HID")(class="active")
+                  +brand-group("M", "Makel", "Makita", "MAKROFLEX", "Massive", "Mastech")
+                  +brand-group("N", "Narva", "NAVIGATOR", "Neon-Night", "Neptun", "Net.on", "Netatmo(группа Legrand)", "NETLAN", "Nexans", "NIKOLAN", "NIKOMAX", "Nordic Aluminium", "NSGate")
+                  +brand-group("O", "OBO Bettermann", "OJ ELECTRONICS", "OMAX")
+                  +brand-group("S", "S&P", "Samsung", "SANJA IPPI", "SATEL", "SBP")
+                  +brand-group("T", "T-Plast", "Tangit", "TCL", "T-Plast", "Tangit", "TCL", "T-Plast", "Tangit", "TCL", "T-Plast", "Tangit", "TCL", "T-Plast", "Tangit", "TCL", "T-Plast", "Tangit", "TCL", "T-Plast", "Tangit", "TCL")

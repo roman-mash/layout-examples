@@ -1,0 +1,85 @@
+.article-card {
+  &__img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    @media (max-width: 991.98px) {
+      height: 120px;
+    }
+    @media (max-width: 575.98px) {
+      height: 195px;
+    }
+  }
+  &__date {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: $clr-text-alt2;
+    @media (max-width: 991.98px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: $clr-text;
+    transition: color 0.2s linear;
+    max-height: 44px;
+    overflow: hidden;
+    &:hover {
+      text-decoration: none;
+    }
+    @media (max-width: 991.98px) {
+      font-size: 14px;
+      max-height: 38px;
+    }
+  }
+  &__categories {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-bottom: -5px;
+    @media (max-width: 991.98px) {
+    }
+    .category-badge {
+      margin-right: 10px;
+      margin-bottom: 5px;
+      @media (max-width: 991.98px) {
+      }
+    }
+  }
+}
+
+.category-badge {
+  display: block;
+  border: 1px solid $clr-main;
+  border-radius: 100px;
+  padding: 4px 14px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $clr-text;
+
+  &:hover {
+    text-decoration: none;
+    color: $clr-text;
+  }
+  @media (max-width: 991.98px) {
+    padding: 4px 8px;
+  }
+  @media (max-width: 575.98px) {
+    padding: 4px 14px;
+  }
+}

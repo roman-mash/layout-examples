@@ -1,0 +1,82 @@
+section.section-catalog.section-p_type2
+  .container
+    .catalog-content
+      .product-top.m-b-20.m-md-b-15.m-lg-b-30
+        h1.product-title Кабель КВОРЭН 1*6-5
+      .f-row 
+        .f-col-12.f-col-md-4
+          .product-slider
+            .product-bages
+              .product-bages__item.product-bages__item--type-dark новинка
+              .product-bages__item.product-bages__item--type-light Акция
+            .product-slider-preview
+              .product-slider-preview-wrap
+                .product-slide
+                  a(href="./images/products/1.jpg", data-fancybox="product-imgs").product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                .product-slide
+                  a(href="./images/products/1.jpg", data-fancybox="product-imgs").product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                .product-slide
+                  a(href="./images/products/1.jpg", data-fancybox="product-imgs").product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                .product-slide
+                  a(href="./images/products/1.jpg", data-fancybox="product-imgs").product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+              .slider-controls
+                .btns-switch
+                  button.btn-no-styles.btn-switch.prev
+                  button.btn-no-styles.btn-switch.next
+            .product-slider-tabs
+              .product-slider-tabs-wrap
+                .product-tab
+                  .product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                .product-tab
+                  .product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                .product-tab
+                  .product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                .product-tab
+                  .product-img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+        .f-col-12.f-col-md-4
+          .product-description
+            .product-description__title Характеристики
+            .product-description__list
+              .product-description__item
+                .product-description__item-key Артикул
+                .product-description__item-value А-3130579
+              .product-description__item
+                .product-description__item-key Бренд
+                .product-description__item-value Воронежкабель
+              .product-description__item
+                .product-description__item-key Диаметр, мм
+                .product-description__item-value 14,5
+              .product-description__item
+                .product-description__item-key Сечение, мм2
+                .product-description__item-value 6
+            a(href='#tab2', role='tab', data-toggle='tab').link-to-all-features Все характеристики
+        .f-col-12.f-col-md-4
+          .product-page-info 
+            .product-page-price 
+              .product-page-price__actual 149 ₽/м
+              .product-page-price__before-discount 159 ₽/м
+            .product-page-availability
+              .product-page-availability__title В наличии:
+              .product-page-availability__count 1077 м
+            .product-page-counter
+              .product-page-counter__title Кол-во, м:
+              .product-page-counter__panel
+                button.btn-product-counter.minus.counterMinus(disabled)
+                input.counterInput(type="text", value="8")
+                button.btn-product-counter.plus.counterPlus 
+            .product-page-control 
+              .product-page-control__item
+                button.btn-like.js-like
+              .product-page-control__item
+                button.btn-compare.js-compare
+              .product-page-control__item
+                a.btn.btn-default.btn-add-to-cart В корзину
+      include ./product-tabs.pug

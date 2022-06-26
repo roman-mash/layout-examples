@@ -1,0 +1,26 @@
+.favorite {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+    @media (max-width: 991.98px) {
+    }
+    @media (max-width: 767.98px) {
+      margin: 0 -8px -16px;
+    }
+  }
+
+  &__item {
+    width: 20%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    @media (max-width: 991.98px) {
+      width: 25%;
+    }
+    @media (max-width: 767.98px) {
+      width: 50%;
+      padding: 0 8px;
+      margin-bottom: 16px;
+    }
+  }
+}

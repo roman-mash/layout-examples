@@ -1,0 +1,20 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'заголовок';
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		+breadcrumbs("Шаблон")
+		include ./../sections/pages/default/default.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

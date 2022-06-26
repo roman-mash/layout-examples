@@ -1,0 +1,22 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'Главная страница';
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		+breadcrumbs("КВОРЭН 1*6-5", "Каталог", "Кабель и провод", "Кабельная продукция")
+		include ./../sections/pages/product/product-page.pug
+		include ./../sections/sliders/analogues.pug
+		include ./../sections/sliders/related-products.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

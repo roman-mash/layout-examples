@@ -1,0 +1,120 @@
+.reviews-block {
+  .nav-pills {
+    background: rgba(255, 255, 255, 0.33);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    @media (max-width: 767.98px) {
+      display: none;
+      flex-direction: column;
+      border: none;
+      position: absolute;
+      border: 1px solid rgba(197, 198, 198, 0.5);
+      background-color: #fff;
+      z-index: 10;
+      top: 46px;
+      left: 0;
+      border-radius: 0;
+    }
+    li {
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+      a {
+        padding: 6px 40px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: $clr-text;
+        transition: all 0.2s linear;
+        @media (max-width: 991.98px) {
+          padding: 6px 20px;
+        }
+        @media (max-width: 767.98px) {
+          width: 100%;
+          padding: 10px 20px;
+        }
+
+        &:hover {
+          background-color: transparent;
+          color: $clr-text-alt2;
+        }
+        &:focus {
+          background-color: transparent;
+          color: $clr-text;
+        }
+      }
+      &.active {
+        a {
+          background-color: #fff;
+          color: $clr-text;
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding-top: 30px;
+  }
+}
+
+.block-with-dropdown {
+  position: relative;
+}
+
+.dropdown-btn-tabs {
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  padding: 11px 60px 11px 20px;
+  background-color: #fff;
+  position: relative;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #1f1f1f;
+  text-align: left;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: $clr-main;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('./../images/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 6px;
+  }
+  &.opened {
+    &::before {
+      background-image: url('./../images/icons/arrow-up.svg');
+    }
+  }
+}
+
+.reviews-block .btns-slider-default .btns-switch {
+  top: -78px;
+}
+
+.slide-full-size {
+  margin-top: 15px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+  color: $clr-text-white;
+
+  &:hover {
+    color: $clr-secondary-alt;
+  }
+}

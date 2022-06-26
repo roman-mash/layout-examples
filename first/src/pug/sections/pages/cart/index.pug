@@ -1,0 +1,42 @@
+section.section-cart-page.section-pb
+  .container 
+    .section-top.m-b-30.m-md-b-40
+      h1.section-title Корзина
+    .cart
+      .cart-header
+        .cart-header__item Наименование
+        .cart-header__item Цена
+        .cart-header__item Количество
+        .cart-header__item Сумма
+      .cart-list 
+        .cart-item
+          a(href="/").cart-item__img.flex-img 
+            img(src="./images/programs/3.png", alt="")
+          .cart-item-info
+            a(href="/").cart-item__title Программа, повышающая оригинальность текста “Антиплагиат Киллер 2017 Final” (профессиональная версия)
+            .cart-item__price <span class="item-presentation">Цена:</span> 15 000 ₽
+            .cart-item__counter 
+              .item-counter   
+                button.item-counter__btn.btn-minus
+                input.item-counter__input(type="text", value="1")
+                button.item-counter__btn.btn-plus
+            .cart-item__sum <span class="item-presentation">Сумма:</span> 15 000 ₽
+            button.btn-delete-cart-item Удалить
+        .cart-item
+          a(href="/").cart-item__img.flex-img 
+            img(src="./images/programs/3.png", alt="")
+          .cart-item-info
+            a(href="/").cart-item__title Программа, повышающая оригинальность текста “Антиплагиат Киллер 2017 Final” (профессиональная версия)
+            .cart-item__price <span class="item-presentation">Цена:</span> 15 000 ₽
+            .cart-item__counter 
+              .item-counter   
+                button.item-counter__btn.btn-minus
+                input.item-counter__input(type="text", value="1")
+                button.item-counter__btn.btn-plus
+            .cart-item__sum <span class="item-presentation">Сумма:</span> 15 000 ₽
+            button.btn-delete-cart-item Удалить
+      .cart-result
+        .cart-total
+          .cart-total__title Итого к оплате:
+          .cart-total__count 15 000 ₽
+        a(href="/order.html").btn.btn-default Перейти к оформлению 

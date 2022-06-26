@@ -1,0 +1,71 @@
+.unique-range {
+  max-width: 450px;
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+      margin-left: 28px;
+      width: 60px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}
+
+.unique-range-block {
+  width: 100%;
+  .irs {
+    &.irs--round {
+      height: 70px;
+      .irs-line {
+        height: 1px;
+      }
+      .irs-bar {
+        height: 1px;
+        background-color: $clr-main;
+      }
+      .irs-handle {
+        background-color: $clr-main;
+        border: none;
+        width: 11px;
+        height: 11px;
+        top: 30px;
+      }
+      .irs-min,
+      .irs-max {
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $clr-text-alt2;
+        top: 50px;
+      }
+
+      .irs-single {
+        top: 50px;
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $clr-text;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

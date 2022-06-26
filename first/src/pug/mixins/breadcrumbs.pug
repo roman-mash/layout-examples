@@ -1,0 +1,10 @@
+mixin breadcrumbs(active, ...items)
+  .breadcrumbs-block
+    .container
+      ol.breadcrumb
+        li
+          a(href='/') Главная
+        each item in items
+          li
+            a(href='#') #{item}
+        li.active #{active}

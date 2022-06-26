@@ -1,0 +1,34 @@
+section.section-order-page.section-pb
+  .container 
+    .section-top.m-b-30.m-md-b-40
+      h1.section-title Оформление заказа
+    .f-row
+      .f-col-12.f-col-xl-8
+        .order-page
+          .order-page-item
+            .order-header Контактные данные
+            .order-page-content
+              .f-row 
+                .f-col-12
+                  .form-group 
+                    label(for="name").order-page__lbl Фамилия Имя Отчество 
+                    input.input-white#name(type="text", name="", placeholder="Иванов Иван Иванович")
+                .f-col-12.f-col-md-6
+                  .form-group 
+                    label(for="email").order-page__lbl Электронная почта
+                    input.input-white#email(type="email", name="", placeholder="example@example.ru")
+                .f-col-12.f-col-md-6
+                  .form-group 
+                    label(for="tel").order-page__lbl Контактный телефон
+                    input.input-white.phone-mask#tel(type="tel", name="", placeholder="+7 (999) 999 99 99")
+                .f-col-12
+                  .form-group 
+                    label(for="promocode").order-page__lbl Промокод (если имеется)
+                    input.input-white#name(type="text", name="", placeholder="example")
+                .f-col-12
+                  .form-group 
+                    label(for="comment").order-page__lbl Комментарий
+                    textarea.textarea-white#comment(name="comment", placeholder="Комментарий")
+          .order-bottom 
+            a(href="/cart.html").link-back Вернуться назад
+            a(href="/").btn.btn-default Перейти к оплате 

@@ -1,0 +1,8 @@
+mixin service-choose(id, text, terms, price)
+  .service-choose
+    input(type="radio", name="choose-service", id = id)
+    label(for=id).service-choose-lbl
+      .service-choose-lbl__text #{text}
+      .service-choose-lbl__terms #{terms}
+      if price
+        .service-choose-lbl__price #{price}

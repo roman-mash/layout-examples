@@ -1,0 +1,17 @@
+mixin cart-item(name, article, producer, price, count, sum)
+  .cart-item
+    a(href="/product.html").cart-item__img.flex-img 
+      img(src="./images/products/1.jpg", alt="")
+    .cart-item-description
+      .cart-item-info
+        a(href="/product.html").cart-item__name #{name}
+        .cart-item__article <span class="point-description">Арт:</span> #{article}
+        .cart-item__producer <span class="point-description">Бренд:</span> #{producer}
+        .cart-item__price <span class="point-description">Цена:</span> #{price}
+      .cart-item-total  
+        .cart-item__counter
+          button.btn-cart-counter.minus.counterMinus(disabled)
+          input.counterInput(type="text", value=count)
+          button.btn-cart-counter.plus.counterPlus 
+        .cart-item__sum #{sum}
+    button.btn-cart-item-delete.cart-item__delete

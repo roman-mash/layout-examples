@@ -1,0 +1,27 @@
+.catalog-sorting 
+  .sorting-item
+    .sorting-select
+      .sorting-select__title Сортировать:
+      .sorting-select__select
+        select.select2-sorting(name="sort-type")
+          option(value="popular") по популярности
+          option(value="name") по наименованию
+          option(value="cheap") сначала дешевле
+          option(value="expensive") сначала дороже
+  .sorting-item
+    .sorting-availability
+      input#available(type="checkbox", name="available", checked)
+      label(for="available") в наличии
+  .sorting-item
+    .sorting-select
+      .sorting-select__title Товаров на странице:
+      .sorting-select__select
+        select.select2-sorting(name="page-count")
+          option(value="10") 10
+          option(value="20") 20
+          option(value="30") 30
+          option(value="40") 40
+  .sorting-item
+    .list-tile-switch 
+      button.btn-tile.active
+      button.btn-list

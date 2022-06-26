@@ -1,0 +1,29 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'Main';
+	- var bodyClass = "home"
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		include ./../sections/index/services.pug
+		include ./../sections/index/work-process.pug
+		include ./../sections/index/advantages.pug
+		include ./../sections/index/process-steps.pug
+		include ./../sections/index/differences.pug
+		include ./../sections/index/guarantees.pug
+		include ./../sections/index/programs.pug
+		include ./../sections/index/reviews.pug
+		include ./../sections/index/faq.pug
+		include ./../sections/index/why.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

@@ -1,0 +1,23 @@
+.attach-docs {
+  &__control {
+    .add-attachment-lbl {
+      &__text {
+        color: $clr-text;
+      }
+    }
+  }
+  &__files {
+    .attachment-file {
+      &__text {
+        color: $clr-text;
+      }
+    }
+  }
+  &__remarks {
+    max-width: 360px;
+    margin-top: 25px;
+    textarea {
+      height: 100px;
+    }
+  }
+}

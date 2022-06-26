@@ -1,0 +1,37 @@
+.product-tabs
+  .product-btns-tabs
+    button.dropdown-btn-tabs.d-block.d-md-none Описание товара
+    ul.nav.nav-tabs(role='tablist')
+      li.active(role='presentation')
+        a(href='#tab1', role='tab', data-toggle='tab') Описание товара
+      li(role='presentation')
+        a(href='#tab2', role='tab', data-toggle='tab') Характеристики
+      li(role='presentation')
+        a(href='#tab3', role='tab', data-toggle='tab') Документы
+  .product-panes
+    .tab-content
+      #tab1.tab-pane.fade.in.active(role='tabpanel') 
+        .tab-info  
+          p Кабели предназначены для аэродромных огней на номинальное напряжение 5000 В переменного тока частоты 50 Гц, применяемых в системах светосигнального оборудования аэродромов.
+          p Кабели изготаваливаются для эксплуатации во всех макроклиматических районах на суше и море, кроме макроклиматического района с очень холодным климатом. Кабели применяются для прокладки под навесом, в помещениях или объемах, где колебания температуры и влажности воздуха несущественно отличаются от колебаний на открытом воздухе. Кабели устойчивы к изгибу при радиусе изгиба, равном 15 номинальным наружным диаметрам кабеля на угол ±90°, число циклов изгибов - не менее 100. Прочность при растяжении резиновой оболочки - не менее 5,39 МПа (55 кгс/кв.мм.); относительное удлинение при разрыве резиновой оболочки - не менее 250% и изоляции - не менее 300%. Кабели устойчивы к воздействию озона, плесневых грибов, влаги, минеральных масел, бензина, керосина и слабых растворов солей, кислот и щелочей. Кабели не распространяют горение при одиночной прокладке.
+          p Минимальная наработка кабелей - 50000 часов. Минимальный срок службы КВОРЭН 1х6-5 - 15 лет.
+      #tab2.tab-pane.fade(role='tabpanel') 
+        .tab-info 
+          .product-features 
+            .product-features__title Характеристики
+            .product-features__list
+              .product-feature
+                .product-feature__key Вес, кг
+                .product-feature__value 350
+              .product-feature
+                .product-feature__key Диаметр, мм
+                .product-feature__value 14,5
+              .product-feature
+                .product-feature__key Сечение, мм2
+                .product-feature__value 6
+      #tab3.tab-pane.fade(role='tabpanel') 
+        .tab-info
+          .product-documents
+            a(href="/", download).product-documents__item Сертификат
+            a(href="/", download).product-documents__item Инструкция
+            a(href="/", download).product-documents__item Презентация

@@ -1,0 +1,20 @@
+#contactUs.modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog(role='document')
+    .modal-content.modal-pd-40
+      button.btn-close-modal(data-dismiss="modal")
+      .modal-wrap
+        .modal-title Связаться с нами
+        .modal-subtitle Мы ответим вам как можно скорее.
+        form(action="").modal-form
+          .form-group 
+            input.input-default(type="text", name="", placeholder="Имя") 
+          .form-group 
+            input.input-default(type="email", name="", placeholder="Электронная почта")
+          .form-group 
+            textarea.textarea-default(name="", placeholder="Сообщение")
+          .form-group 
+            .custom-checkbox.order-mark
+              input#privacy(type="checkbox", name="privacy", checked)
+              label(for="privacy") Я согласен с условиями <a href="#">Политики конфиденциальности</a>
+          .d-flex.justify-content-center.align-items-center
+            button(type="submit").btn.btn-default Отправить

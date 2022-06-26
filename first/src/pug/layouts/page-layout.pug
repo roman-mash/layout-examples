@@ -1,0 +1,46 @@
+include ./mixins.pug
+
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta#sibling(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    
+    title #{title}
+
+    //  Styles 
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Montserrat:wght@400;500&display=swap', rel='stylesheet')
+    link(rel="stylesheet", href="vendor/bootstrap/css/bootstrap-custom.min.css")
+    link(rel="stylesheet", href="vendor/fancybox/jquery.fancybox.min.css")
+    link(rel="stylesheet", href="vendor/slick/slick.css")
+    link(rel="stylesheet", href="vendor/slick/slick-theme.css")
+    link(rel="stylesheet", href="vendor/select2/css/select2.min.css")
+    link(rel="stylesheet", href="vendor/ionrange/css/ion.rangeSlider.min.css")
+    link(rel="stylesheet", href="css/helper-classes.min.css")
+    link(rel="stylesheet", href="css/main.css")
+  body(class= bodyClass)
+    .wrapper
+      block content
+
+    block footer
+
+    .modals 
+      include ./../sections/modals/index.pug
+
+    //  JavaScript
+    script(type="text/javascript", src="vendor/jquery/jquery-3.3.1.min.js")
+    script(type="text/javascript", src="vendor/bootstrap/js/bootstrap.min.js")
+    script(type="text/javascript", src="vendor/fancybox/jquery.fancybox.min.js")
+    script(type="text/javascript", src="vendor/slick/slick.min.js")
+    script(type="text/javascript", src="vendor/mask/jquery.mask.min.js")
+    script(type="text/javascript", src="vendor/object-fit/ofi.min.js")
+    script(type="text/javascript", src="vendor/select2/js/select2.min.js")
+    script(type="text/javascript", src="vendor/select2/js/i18n/ru.js")
+    script(type="text/javascript", src="vendor/ionrange/js/ion.rangeSlider.min.js")
+    script(type="text/javascript", src="js/dynamicViewport.js")
+    script(type="text/javascript", src="js/main.js")

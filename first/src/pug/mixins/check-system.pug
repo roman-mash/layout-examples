@@ -1,0 +1,15 @@
+mixin check-system(id, price, title, subtitle, img, tip)
+  .check-system
+    input(type="radio", name="check-system", id = id)
+    label(for=id).check-system-lbl 
+      .check-system-lbl-top
+        .check-system-lbl__price #{price}
+      .check-system-lbl-bottom
+        .check-system-lbl__title #{title}
+        if subtitle
+          .check-system-lbl__subtitle #{subtitle}
+        .check-system-lbl__img.flex-img
+          img(src=img, alt="")
+      if tip
+        .check-system-tip рекомендовано студентам
+    a(href="#").check-system-preview Смотреть пример отчета

@@ -1,0 +1,72 @@
+#service-order.tab-pane.fade.in.active(role='tabpanel')
+  form(action="").service-order-form 
+    .f-row 
+      .f-col-12.f-col-md-8
+        .order-item.text-input.m-b-35.m-md-b-45
+          .order-item__content
+            .form-group 
+              textarea.textarea-grey(name="paper-text", placeholder="Вставьте текст, который вы хотите проверить")
+            .field-divider--word или
+            .form-group 
+              input#file-input-sm.file-input(type="file", name="files")
+              label.file-lbl.file-lbl--sm(for="file-input-sm") 
+                span.file-lbl__text Нажмите, чтобы выбрать файл<br> или перетащите для загрузки
+      .f-col-12.f-col-md-4
+        .order-faq.m-b-35.m-md-b-0
+          a(href="#faq", data-toggle="modal").order-faq__item Какую систему выбрать?
+          a(href="#faq", data-toggle="modal").order-faq__item Отличие Антиплагиат.Ру от Антиплагиат.ВУЗ
+          a(href="#faq", data-toggle="modal").order-faq__item Как быстро придет отчет?
+          a(href="#progress", data-toggle="modal").order-faq__item Вопрос-ответ
+      .f-col-12.f-col-xl-8
+        .order-item.m-b-35.m-md-b-45
+          .order-item__title.m-b-25.m-md-b-30 Выберите систему проверки
+          .order-item__content
+            .check-systems-list
+              +check-system('cs1', '99 ₽', 'Антиплагиат.ВУЗ', '(только процент)', './images/icons/check-systems/antiplagiat-vuz.svg', true)
+              +check-system('cs2', '149 ₽', 'Антиплагиат.ВУЗ', '(краткий отчет)', './images/icons/check-systems/antiplagiat-vuz.svg', true)
+              +check-system('cs3', '249 ₽', 'Антиплагиат.ВУЗ', '(полный отчет+справка)', './images/icons/check-systems/antiplagiat-vuz.svg', true)
+              +check-system('cs4', '49 ₽', 'Антиплагиат.Ру', '(только процент)', './images/icons/check-systems/antiplagiat-vuz.svg', false)
+              +check-system('cs5', '149 ₽', 'Руконтекст', '', './images/icons/check-systems/rucontext.svg', false)
+              +check-system('cs6', '199 ₽', 'Text ru', '', './images/icons/check-systems/text.svg', false)
+              +check-system('cs7', '199 ₽', 'Antiplagiarism Net (ETXT)', '', './images/icons/check-systems/etxt.svg', false)
+              +check-system('cs8', '150 ₽/10стр', 'Strikeplagiarism', '', './images/icons/check-systems/strike.png', false)
+        .order-item.m-b-35.m-md-b-45
+          .order-item__title.m-b-25.m-md-b-30 Выберите дополнительные услуги
+          .order-item__content
+            .extra-service-list
+              +extra-service('es1', 'Проверить на техническое кодирование и на скрытый текст', '150 ₽', true)
+              +extra-service('es2', 'Почистить от технического кодирования и от скрытого текста', '500 ₽', true)
+        .order-item.m-b-35.m-md-b-45
+          .order-item__title.m-b-25.m-md-b-30 Введите данные
+          .order-item__content
+            .input-data 
+              .input-data-item
+                .input-data-item__top
+                  label.input-data-item__top-title Электронная почта
+                  a(href="#").btn-no-email Нет email? Нажмите сюда
+                .form-group 
+                  input.input-default(type="email", name="email", placeholder="example@example.ru")
+              .input-data-item
+                .input-data-item__top
+                  label.input-data-item__top-title Промокод (если имеется)
+                .form-group 
+                  input.input-default(type="text", name="promocode", placeholder="example")
+        .order-result
+          .order-result__title Итого к оплате:
+          .order-result__price 249 ₽
+        .subscribe-banner.m-t-35.m-md-t-40
+          .subscribe-banner__title Нет промокода, но вы хотите получить скидку на услугу? Поделись с друзьями, подпишись, и получи скудку 5%!
+          .subscribe-banner__socials.socials-colored
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/telegram.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/vk.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/instagram.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/facebook.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/whatsapp.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/viber.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/ok.svg);").socials-colored__item
+            a(href="/", target="_blank", style="background-image:url(/images/icons/socials-colored/youtube.svg);").socials-colored__item
+          a(href="#").btn.btn-default-alt Подписаться 
+        .custom-checkbox.order-privacy
+          input#privacy(type="checkbox", name="privacy", checked)
+          label(for="privacy") Я согласен с условиями <a href="#">Политики конфиденциальности</a>
+        button(type="submit").btn.btn-default.m-t-30.btn-submit-order Заказать

@@ -1,0 +1,13 @@
+section.section-service-order.section-pb
+  .container 
+    .section-top.m-b-30
+      h1.section-title3 Повысить уникальность текста
+    .service-order
+      ul.nav.nav-pills(role='tablist')
+        li.active(role='presentation')
+          a(href='#service-order', role='tab', data-toggle='tab') Форма заказа
+        li(role='presentation')
+          a(href='#service-review', role='tab', data-toggle='tab') Отзывы об услуге
+      .tab-content
+        include ./service-order.pug
+        include ./../service-review.pug

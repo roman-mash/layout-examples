@@ -1,0 +1,30 @@
+section.section-cart.section-p_type2
+  .container
+    .cart-content
+      .cart-top.m-b-10.m-md-b-30
+        .page-title Ваша корзина
+        button.btn-clean-cart Очистить корзину
+      .cart-list
+        .cart-header
+          .cart-header__item Наименование
+          .cart-header__item Артикул
+          .cart-header__item Бренд
+          .cart-header__item Цена
+          .cart-header__item Количество
+          .cart-header__item Сумма
+        .cart-items 
+          +cart-item('Кабель ВВГ-Пнг(А) 3*2.5', '313057911', 'Воронежкабель', '149 ₽/м', '10', '1490₽')
+          +cart-item('Кабель АПвВнг(А)-LS, 15 кВ', '4562228002', 'Конкорд', '17,99 ₽/м', '1', '17,99₽')
+      .cart-control
+        .f-row 
+          .f-col-12.f-col-md-8.f-col-xl-9.f-order-2.f-order-md-1.m-t-15.m-md-t-0
+            a(href="/").link-back Вернуться назад
+          .f-col-12.f-col-md-4.f-col-xl-3.f-order-1.f-order-md-2
+            .cart-result
+              .cart-result__item
+                .cart-result__item-key Общий вес заказа:
+                .cart-result__item-value 1,145кг
+              .cart-result__item
+                .cart-result__item-key Итого:
+                .cart-result__item-value.total 1 507,99₽
+              a(href="/order.html").btn.btn-default.w-100.btn-to-order Оформить заказ

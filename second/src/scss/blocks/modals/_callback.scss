@@ -1,0 +1,83 @@
+.modal-content {
+  position: relative;
+  padding: 60px 68px;
+  background-color: $clr-main;
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  background-image: url('./../images/icons/close.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.modal__header {
+  margin-bottom: 30px;
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 120%;
+  color: $clr-text-white;
+  text-align: center;
+}
+
+.modal-form {
+  .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    input,
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
+.input-default {
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 13px 15px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #303030;
+}
+
+.textarea_type {
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 13px 15px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  color: #303030;
+  min-height: 100px;
+}
+
+.modal-privacy {
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+
+  a {
+    color: $clr-text-white;
+  }
+}
+
+.modal__btn {
+  border: 1px solid #ffffff;
+}

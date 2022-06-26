@@ -1,0 +1,41 @@
+mixin product-card(title, producer, article, availability, price, inCart=false)
+  .product-card
+    .product-card-wrapper
+      .product-card-info
+        a.product-card__img.flex-img(href="/product.html")
+          img(src="./images/products/1.jpg", alt="")
+        .product-card-details
+          .product-card__naming
+            a.product-card__title(title= title, href="/product.html") #{title}
+            .product-card__article.product-card__article--type-list Арт: #{article}
+            .product-card__producer(title= producer) <span class="point-description">Бренд:</span> #{producer}
+            .product-card__article.product-card__article--type-tile Арт: #{article}
+          .product-card__producer(title= producer).list-type <span class="point-description">Бренд:</span> #{producer}
+          .product-card__availability <span class="point-description">Наличие:</span> #{availability}
+          if price === 'По запросу'
+            .product-card__price <span class="point-description">Цена:</span> #{price}
+          else
+            .product-card__price.have-price <span class="point-description">Цена:</span> #{price}
+      .product-card-manage
+        .product-card__control
+          .product-card__control-item
+            if availability === 'Под заказ'
+              .product-availability #{availability}
+            else
+              .product-availability.available В наличии
+          .product-card__control-item
+            .product-counter
+              .btn-minus-wrapper
+                button.btn-counter.btn-minus.counterMinus(disabled)
+              input.counterInput.product-counter__input(type="text", value="1")
+              .btn-plus-wrapper
+                button.btn-counter.btn-plus.counterPlus
+          .product-card__control-item
+            button.btn-like.js-like
+          .product-card__control-item
+            button.btn-compare.js-compare
+          .product-card__control-item
+            if (inCart)
+              a.btn.btn-secondary.btn-add-to-cart В корзине
+            else 
+              a.btn.btn-default.btn-add-to-cart В корзину

@@ -1,0 +1,12 @@
+mixin programs-slide(img, badge1, badge2, title, actual, previous)
+  .programs-card.ss-item 
+    a(href="/").programs-card__img.flex-img 
+      img(src="./images/programs/" + img, alt="")
+      .programs-badges
+        span.programs-badge #{badge1}
+        span.programs-badge #{badge2}
+    a(href="/").programs-card__title #{title}
+    .programs-card__price 
+      span.actual #{actual}
+      if previous
+        span.previous #{previous}

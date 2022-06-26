@@ -1,0 +1,7 @@
+mixin service-item(img, title, terms, link)
+  .f-col-12.f-col-sm-6.f-col-md-4.f-col-xl-3.m-b-20.m-md-b-30
+    .service-item
+      .service-item__img.object-fit 
+        img(src="./images/services/" + img, alt="")
+      a(href= link).service-item__title #{title}
+      .service-item__terms #{terms}

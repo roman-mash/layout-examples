@@ -1,0 +1,11 @@
+mixin extra-service(id, title, price, link, text)
+  .extra-service
+    input(type="checkbox", name="check-system", id = id)
+    label(for=id).extra-service-lbl
+      .extra-service-info
+        .extra-service-lbl__title #{title}
+        if text
+          .extra-service-lbl__text #{text}
+        if link
+          a(href="#faq", data-toggle="modal").extra-service-lbl__link Подробнее об услуге
+      .extra-service-lbl__price #{price}

@@ -1,0 +1,21 @@
+extends ../layouts/page-layout.pug
+
+block variables
+	- var title = 'Главная страница';
+
+block content
+
+	// Page header
+	header.header
+		include ./../sections/header/header.pug
+
+	// Page content
+	main.content
+		+breadcrumbs("Корзина")
+		include ./../sections/pages/cart/cart-page.pug
+		include ./../sections/sliders/related-products.pug
+
+block footer
+	// Page footer
+	footer#bottom.footer
+		include ./../sections/footer/footer.pug

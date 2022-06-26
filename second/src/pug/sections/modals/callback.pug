@@ -1,0 +1,18 @@
+#callback.modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog(role='document')
+    .modal-content
+      button.btn-close-modal(type='button', data-dismiss='modal', aria-label='Close')
+      .modal-block 
+        .modal__header Заказать звонок
+        form(action="").modal-form
+          .form-group
+            input.input-default(type="text", placeholder="Имя")
+          .form-group
+            input.phone-mask.input-default(type="tel", placeholder="Номер телефона")
+          .form-group
+            input.input-default(type="email", placeholder="Электронная почта")
+          .form-group
+            textarea.textarea_type(placeholder="Ваше сообщение")
+          .modal-privacy Нажимая «Заказать звонок»,<br> Вы принимаете условия 
+            a(href="#") политики конфиденциальности
+          button.btn.btn-default.w-100.modal__btn Заказать звонок

@@ -1,0 +1,165 @@
+section.section-order.section-p_type2
+  .container
+    form(action="").order-content
+      .page-title.m-b-30 Оформление заказа
+      .f-row 
+        .f-col-12.f-col-xl-9
+          .order-items
+            .order-item
+              .order-item__title Контактные данные
+              .order-item__content
+                .customer-info
+                  .inputs-group
+                    .inputs-group--row.inputs-group--row-2
+                      .form-group 
+                        input.input-order(type="text", name="name", placeholder="* Имя")
+                      .form-group 
+                        input.input-order(type="text", name="surname", placeholder="* Фамилия")
+                    .inputs-group--row.inputs-group--row-3
+                      .form-group 
+                        input.input-order(type="text", name="inn", placeholder="* ИНН")
+                      .form-group 
+                        input.input-order(type="phone", name="email", placeholder="* Электронная почта")
+                      .form-group 
+                        input.input-order.phone-mask(type="tel", name="phone", placeholder="* Телефон")
+                .order-warning * поля, обязательные для заполнения
+            .order-item
+              .order-item__title Способ доставки
+              .order-item__content
+                .delivery-methods.fix-collapse 
+                  .delivery-method
+                    .delivery-method__checkbox 
+                      input#post(type="radio", name="delivery-method", value="post", checked)
+                      label(for="post", data-toggle="collapse", data-target="#postInputs").delivery-lbl
+                        .delivery-lbl-left
+                          .delivery-lbl__name Почта России
+                          .delivery-lbl__time 10-14 раб. дней
+                        .delivery-lbl-right
+                          .delivery-lbl__price бесплатно
+                    .delivery-fields.collapse.in#postInputs
+                      .inputs-group
+                        .inputs-group--row.inputs-group--row-2
+                          .form-group 
+                            input.input-order(type="text", name="city", placeholder="* Город")
+                          .form-group 
+                            input.input-order(type="text", name="street", placeholder="* Улица")
+                        .inputs-group--row.inputs-group--row-3
+                          .form-group 
+                            input.input-order(type="text", name="house", placeholder="* Дом")
+                          .form-group 
+                            input.input-order(type="text", name="building", placeholder="Корпус")
+                          .form-group 
+                            input.input-order(type="text", name="flat", placeholder="Квартира")
+                  .delivery-method
+                    .delivery-method__checkbox 
+                      input#curier(type="radio", name="delivery-method", value="curier")
+                      label(for="curier", data-toggle="collapse", data-target="#curierInputs").delivery-lbl
+                        .delivery-lbl-left
+                          .delivery-lbl__name Курьерская служба
+                          .delivery-lbl__time 3-5 раб. дня
+                        .delivery-lbl-right
+                          .delivery-lbl__price 1500₽
+                          .delivery-lbl__terms *при заказе от 10 000₽ доставка бесплатная
+                    .delivery-fields.collapse#curierInputs
+                      .inputs-group
+                        .inputs-group--row.inputs-group--row-2
+                          .form-group 
+                            input.input-order(type="text", name="city", placeholder="* Город")
+                          .form-group 
+                            input.input-order(type="text", name="street", placeholder="* Улица")
+                        .inputs-group--row.inputs-group--row-3
+                          .form-group 
+                            input.input-order(type="text", name="house", placeholder="* Дом")
+                          .form-group 
+                            input.input-order(type="text", name="building", placeholder="Корпус")
+                          .form-group 
+                            input.input-order(type="text", name="flat", placeholder="Квартира")
+                  .delivery-method
+                    .delivery-method__checkbox 
+                      input#pickup(type="radio", name="delivery-method", value="pickup")
+                      label(for="pickup", data-toggle="collapse", data-target="#pickupInputs").delivery-lbl
+                        .delivery-lbl-left
+                          .delivery-lbl__name Самовывоз
+                          .delivery-lbl__time от 1 раб. дня
+                        .delivery-lbl-right
+                          .delivery-lbl__price бесплатно
+                    .delivery-fields.collapse#pickupInputs
+                  .delivery-method
+                    .delivery-method__checkbox 
+                      input#other(type="radio", name="delivery-method", value="other")
+                      label(for="other", data-toggle="collapse", data-target="#otherInputs").delivery-lbl
+                        .delivery-lbl-left
+                          .delivery-lbl__name Иное
+                    .delivery-fields.collapse#otherInputs
+                      .inputs-group
+                        .inputs-group--row.inputs-group--row-2
+                          .form-group 
+                            input.input-order(type="text", name="city", placeholder="* Город")
+                          .form-group 
+                            input.input-order(type="text", name="street", placeholder="* Улица")
+                        .inputs-group--row.inputs-group--row-3
+                          .form-group 
+                            input.input-order(type="text", name="house", placeholder="* Дом")
+                          .form-group 
+                            input.input-order(type="text", name="building", placeholder="Корпус")
+                          .form-group 
+                            input.input-order(type="text", name="flat", placeholder="Квартира")
+            .order-item
+              .order-item__title Способ оплаты
+              .order-item__content
+                .pay-methods 
+                  .pay-method
+                    input#bill(type="radio", name="pay-method", value="bill", checked)
+                    label(for="bill").pay-lbl Оплата по счёту
+                  .pay-method
+                    input#online(type="radio", name="pay-method", value="online")
+                    label(for="online").pay-lbl Онлайн
+                  .pay-method
+                    input#card(type="radio", name="pay-method", value="card")
+                    label(for="card").pay-lbl Картой при получении
+                  .pay-method
+                    input#cash(type="radio", name="pay-method", value="cash")
+                    label(for="cash").pay-lbl Наличными при получении
+            .order-item
+              .order-item__title Комментарий к заказу
+              .order-item__content
+                .order-comment
+                  textarea.textarea-order(name="comment", placeholder="Комментарий к заказу")
+        .f-col-12.f-col-xl-3
+          .order-result 
+            .order-result__title Ваш заказ
+            .order-result-info-block
+              .order-result__list
+                .result-item 
+                  a(href="/").result-item__img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                  .result-item-info
+                    a(href="/").result-item__title Кабель ВВГ-Пнг(А) 3*2.5
+                    .result-item-total
+                      .result-item__count 10 м
+                      .result-item__sum 1490₽
+                .result-item 
+                  a(href="/").result-item__img.flex-img 
+                    img(src="./images/products/1.jpg", alt="")
+                  .result-item-info
+                    a(href="/").result-item__title Кабель АПвВнг(А)-LS, 15 кВ
+                    .result-item-total
+                      .result-item__count 1 м
+                      .result-item__sum 17,99₽
+              .order-result-total 
+                .order-result-total__item
+                  .order-result-total__item-key Общий вес заказа
+                  .order-result-total__item-value 1,145кг
+                .order-result-total__item
+                  .order-result-total__item-key Доставка
+                  .order-result-total__item-value.accent 0₽
+                .order-result-total__item
+                  .order-result-total__item-key Итого
+                  .order-result-total__item-value.accent 1 507,99₽
+        .f-col-12.f-col-xl-9
+          .order-control 
+            .f-row 
+              .f-col-12.f-col-md-8.f-order-2.f-order-md-1.m-t-15.m-md-t-0
+                a(href="/").link-back Вернуться назад
+              .f-col-12.f-col-md-4.f-order-1.f-order-md-2
+                a(href="/result.html").btn.btn-default.w-100.btn-to-order Оформить заказ

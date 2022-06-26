@@ -1,0 +1,111 @@
+.header-content
+  .header-top
+    .container
+      .header-top-block
+        a(href="/").page-logo.flex-img
+        .header-contacts.d-none.d-xl-block
+          .header-contacts-block
+            a.phone-number(href="tel:8 (495) 000-00-00")
+              .phone-number__icon
+              .phone-number-block
+                .phone-number__number 8 (495) 000-00-00
+                .phone-number__text Бесплатный звонок по Москве
+            a.phone-number(href="tel:8 (800) 000-00-00") 
+              .phone-number__icon
+              .phone-number-block
+                .phone-number__number 8 (800) 000-00-00
+                .phone-number__text Бесплатный звонок по России
+        .header-panel
+          .panel-block
+            a(href="/favorite.html", style="background-image:url(./images/icons/panel/heart.svg)").panel-item.favorites
+            a(href="/compare.html", style="background-image:url(./images/icons/panel/bar-chart.svg)").panel-item.compare
+              .panel-item__amount 3
+            a(href="/login.html", style="background-image:url(./images/icons/panel/user.svg)").panel-item.login
+            a(href="/cart.html", style="background-image:url(./images/icons/panel/cart.svg)").panel-item.cart
+              .panel-item__amount 1
+          a(href="#").market-link 
+            .market-link__item.market-link__blue B2B
+            .market-link__item.market-link__white MARKET
+          button.btn-open-menu.d-xl-none
+            .btn-line.btn-line_1 
+            .btn-line.btn-line_2 
+            .btn-line.btn-line_3 
+  .header-center
+    .container
+      .header-center-block
+        .header-menu
+          ul.nav.navbar-nav
+            li
+              a(href="/production.html") Производство электрощитов
+            li
+              a(href="/projection.html") Проектирование
+            li
+              a(href="/portfolio.html") Портфолио
+            li
+              a(href="/about.html") О компании
+            li
+              a(href="/contacts.html") Контакты
+            li
+              a(href="/career.html") Карьера
+            li
+              a(href="/cooperation.html") Сотрудничество
+        .header-contacts.d-xl-none.m-t-40
+          .header-contacts-block
+            a.phone-number(href="tel:8 (495) 000-00-00")
+              .phone-number__icon
+              .phone-number-block
+                .phone-number__number 8 (495) 000-00-00
+                .phone-number__text Бесплатный звонок по Москве
+            a.phone-number(href="tel:8 (800) 000-00-00") 
+              .phone-number__icon
+              .phone-number-block
+                .phone-number__number 8 (800) 000-00-00
+                .phone-number__text Бесплатный звонок по России
+  .header-bottom
+    .container 
+      .header-bottom-block
+        button.btn.btn-catalog.btn-secondary Каталог
+        form.search-input
+          .input-group 
+            input.input-default(type="text", name="keyword", placeholder="Поиск по каталогу")
+            button(type="submit").btn-search-sm 
+          button.btn-search(type="submit").btn-secondary.btn Найти
+  .catalog
+    .catalog__lvl1 
+      ul.catalog__lvl1-list 
+        li
+          a.hover.has-inner-lvl(href="/catalog2.html")
+            .icon.flex-img 
+              img(src="./images/icons/main-catalog/cabel.png", alt="") 
+            .text Кабель и провод
+          +catalog-lvl2-type1-show
+        li
+          a.has-inner-lvl(href="/catalog2.html")
+            .icon.flex-img 
+              img(src="./images/icons/main-catalog/light-tech.png", alt="") 
+            .text Светотехника
+          +catalog-lvl2-type2
+        li
+          a.has-inner-lvl(href="/catalog2.html")
+            .icon.flex-img 
+              img(src="./images/icons/main-catalog/fan.png", alt="") 
+            .text Вентиляция
+          +catalog-lvl2-type3
+        li
+          a.has-inner-lvl(href="/catalog2.html")
+            .icon.flex-img 
+              img(src="./images/icons/main-catalog/electricity.png", alt="") 
+            .text Электротовары
+          +catalog-lvl2-type1
+        li
+          a.has-inner-lvl(href="/catalog2.html")
+            .icon.flex-img 
+              img(src="./images/icons/main-catalog/lightning-protection.png", alt="") 
+            .text Молниезащита
+          +catalog-lvl2-type2
+        li
+          a.has-inner-lvl(href="/catalog2.html")
+            .icon.flex-img 
+              img(src="./images/icons/main-catalog/factory.png", alt="") 
+            .text Завод
+          +catalog-lvl2-type3

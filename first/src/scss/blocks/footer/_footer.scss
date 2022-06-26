@@ -1,0 +1,93 @@
+.footer-top {
+  background-color: transparentize($clr-secondary, 0.1);
+  padding: 40px 0;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 25px;
+  @media (max-width: 767.98px) {
+    row-gap: 20px;
+  }
+}
+.footer-menu {
+  float: none;
+  min-width: 70%;
+  @media (max-width: 767.98px) {
+    min-width: 100%;
+    order: 1;
+  }
+  .nav {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 -10px;
+    > li {
+      float: none;
+      margin-right: 40px;
+      margin-bottom: 10px;
+      @media (max-width: 991.98px) {
+        margin-right: 25px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      > a {
+        display: block;
+        padding: 0;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: transparentize($clr-text-white, 0.1);
+        transition: color 0.2s linear;
+        @media (max-width: 767.98px) {
+          font-size: 14px;
+        }
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          background-color: transparent;
+          color: transparentize($clr-text-white, 0.4);
+        }
+      }
+    }
+  }
+}
+.footer-attestation {
+  min-width: 30%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: transparentize($clr-text-white, 0.1);
+  @media (max-width: 767.98px) {
+    order: 3;
+    min-width: 100%;
+    text-align-last: left;
+    font-size: 14px;
+  }
+}
+
+.footer-socials {
+  min-width: 40%;
+  @media (max-width: 767.98px) {
+    order: 2;
+    min-width: 100%;
+  }
+}
+.footer-payments {
+  min-width: 60%;
+  justify-content: flex-end;
+  @media (max-width: 767.98px) {
+    order: 4;
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+}

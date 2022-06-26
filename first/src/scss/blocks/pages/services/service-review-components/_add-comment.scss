@@ -1,0 +1,102 @@
+.add-comment {
+  background: $clr-grey-light;
+  width: 100%;
+  padding: 30px;
+  @media (max-width: 767.98px) {
+    padding: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  &__files {
+    margin-bottom: -10px;
+  }
+  &__bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn {
+      padding: 11px 37px;
+      @media (max-width: 767.98px) {
+        margin-top: 15px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  textarea {
+    height: 92px;
+  }
+}
+
+.comment-file,
+.attachment-file {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: $clr-text-alt;
+  }
+  .delete-attachement-file {
+    position: absolute;
+    right: 0;
+    top: 7px;
+  }
+}
+.order-item {
+  .attachment-file {
+    max-width: 365px;
+    padding-right: 20px;
+  }
+}
+
+.delete-attachement-file {
+  background-color: transparent;
+  border: none;
+  width: 10px;
+  height: 10px;
+  background-image: url('./../images/icons/close.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.15;
+  transition: all 0.2s linear;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.add-attachment {
+  &-lbl {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &__icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    &__text {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: $clr-text-alt;
+    }
+  }
+}
